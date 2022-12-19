@@ -126,7 +126,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(INSIDE_OF_TRUCK), MAP_NUM(INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    SetWarpDestination(MAP_GROUP(TUSA_TOWN_PLAYER_ROOM), MAP_NUM(TUSA_TOWN_PLAYER_ROOM), WARP_ID_NONE, -1, -1);
     WarpIntoMap();
 }
 
