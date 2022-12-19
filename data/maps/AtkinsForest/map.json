@@ -17,6 +17,11 @@
       "map": "MAP_ATKINS_LAKE",
       "offset": -9,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ATKINS_TOWN",
+      "offset": -20,
+      "direction": "up"
     }
   ],
   "object_events": [

@@ -4470,6 +4470,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/TusaTown_PlayerRoom/border.bin",
       "blockdata_filepath": "data/layouts/TusaTown_PlayerRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_13",
+      "name": "Route_13_Layout",
+      "width": 60,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Sootopolis",
+      "border_filepath": "data/layouts/Route_13/border.bin",
+      "blockdata_filepath": "data/layouts/Route_13/map.bin"
+    },
+    {
+      "id": "LAYOUT_ATKINS_TOWN",
+      "name": "AtkinsTown_Layout",
+      "width": 54,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/AtkinsTown/border.bin",
+      "blockdata_filepath": "data/layouts/AtkinsTown/map.bin"
     }
   ]
 }

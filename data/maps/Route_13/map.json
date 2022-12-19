@@ -1,9 +1,9 @@
 {
-  "id": "MAP_ATKINS_LAKE",
-  "name": "Atkins_Lake",
-  "layout": "LAYOUT_ATKINS_LAKE",
-  "music": "MUS_PETALBURG_WOODS",
-  "region_map_section": "MAPSEC_PETALBURG_WOODS",
+  "id": "MAP_ROUTE_13",
+  "name": "Route_13",
+  "layout": "LAYOUT_ROUTE_13",
+  "music": "MUS_ROUTE113",
+  "region_map_section": "MAPSEC_OLDALE_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -12,13 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_ATKINS_FOREST",
-      "offset": 9,
-      "direction": "up"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],

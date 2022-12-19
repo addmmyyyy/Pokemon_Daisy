@@ -1071,3 +1071,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/IndoorTusa_PlayerHouse/scripts.inc"
 
 	.include "data/maps/TusaTown_PlayerRoom/scripts.inc"
+
+	.include "data/maps/Route_13/scripts.inc"
+
+	.include "data/maps/AtkinsTown/scripts.inc"

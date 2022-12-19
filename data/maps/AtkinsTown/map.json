@@ -1,9 +1,9 @@
 {
-  "id": "MAP_ATKINS_LAKE",
-  "name": "Atkins_Lake",
-  "layout": "LAYOUT_ATKINS_LAKE",
-  "music": "MUS_PETALBURG_WOODS",
-  "region_map_section": "MAPSEC_PETALBURG_WOODS",
+  "id": "MAP_ATKINS_TOWN",
+  "name": "AtkinsTown",
+  "layout": "LAYOUT_ATKINS_TOWN",
+  "music": "MUS_OLDALE",
+  "region_map_section": "MAPSEC_OLDALE_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -15,8 +15,8 @@
   "connections": [
     {
       "map": "MAP_ATKINS_FOREST",
-      "offset": 9,
-      "direction": "up"
+      "offset": 20,
+      "direction": "down"
     }
   ],
   "object_events": [
