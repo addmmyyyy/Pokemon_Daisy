@@ -4430,6 +4430,46 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/Joyces_Dungeon_Back/border.bin",
       "blockdata_filepath": "data/layouts/Joyces_Dungeon_Back/map.bin"
+    },
+    {
+      "id": "LAYOUT_ATKINS_FOREST",
+      "name": "AtkinsForest_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AtkinsForest/border.bin",
+      "blockdata_filepath": "data/layouts/AtkinsForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_ATKINS_LAKE",
+      "name": "Atkins_Lake_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Atkins_Lake/border.bin",
+      "blockdata_filepath": "data/layouts/Atkins_Lake/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDOOR_TUSA_PLAYER_HOUSE",
+      "name": "IndoorTusa_PlayerHouse_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/IndoorTusa_PlayerHouse/border.bin",
+      "blockdata_filepath": "data/layouts/IndoorTusa_PlayerHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUSA_TOWN_PLAYER_ROOM",
+      "name": "TusaTown_PlayerRoom_Layout",
+      "width": 10,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TusaTown_PlayerRoom/border.bin",
+      "blockdata_filepath": "data/layouts/TusaTown_PlayerRoom/map.bin"
     }
   ]
 }

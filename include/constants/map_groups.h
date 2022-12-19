@@ -77,6 +77,8 @@
 #define MAP_OLDALE_TOWN_POKEMON_CENTER_1F (2 | (2 << 8))
 #define MAP_OLDALE_TOWN_POKEMON_CENTER_2F (3 | (2 << 8))
 #define MAP_OLDALE_TOWN_MART              (4 | (2 << 8))
+#define MAP_INDOOR_TUSA_PLAYER_HOUSE      (5 | (2 << 8))
+#define MAP_TUSA_TOWN_PLAYER_ROOM         (6 | (2 << 8))
 
 // gMapGroup_IndoorDewford
 #define MAP_DEWFORD_TOWN_HOUSE1            (0 | (3 << 8))
@@ -402,6 +404,8 @@
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
 #define MAP_JOYCES_DUNGEON_MAIN                      (108 | (24 << 8))
 #define MAP_JOYCES_DUNGEON_BACK                      (109 | (24 << 8))
+#define MAP_ATKINS_FOREST                            (110 | (24 << 8))
+#define MAP_ATKINS_LAKE                              (111 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

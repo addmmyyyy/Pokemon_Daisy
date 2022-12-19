@@ -107,7 +107,9 @@
     "OldaleTown_House2",
     "OldaleTown_PokemonCenter_1F",
     "OldaleTown_PokemonCenter_2F",
-    "OldaleTown_Mart"
+    "OldaleTown_Mart",
+    "IndoorTusa_PlayerHouse",
+    "TusaTown_PlayerRoom"
   ],
   "gMapGroup_IndoorDewford": [
     "DewfordTown_House1",
@@ -432,7 +434,9 @@
     "AlteringCave",
     "MeteorFalls_StevensCave",
     "Joyces_Dungeon_Main",
-    "Joyces_Dungeon_Back"
+    "Joyces_Dungeon_Back",
+    "AtkinsForest",
+    "Atkins_Lake"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

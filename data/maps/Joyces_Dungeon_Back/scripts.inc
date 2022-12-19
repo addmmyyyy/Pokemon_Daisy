@@ -1,5 +1,3 @@
-Joyces_Dungeon_Back_MapScripts::
-	.byte 0
 
 	Joyces_Dungeon_Back_MapScripts::
 		.byte 0

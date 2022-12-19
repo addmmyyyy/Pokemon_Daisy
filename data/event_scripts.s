@@ -1063,3 +1063,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Joyces_Dungeon_Main/scripts.inc"
 
 	.include "data/maps/Joyces_Dungeon_Back/scripts.inc"
+
+	.include "data/maps/AtkinsForest/scripts.inc"
+
+	.include "data/maps/Atkins_Lake/scripts.inc"
+
+	.include "data/maps/IndoorTusa_PlayerHouse/scripts.inc"
+
+	.include "data/maps/TusaTown_PlayerRoom/scripts.inc"
