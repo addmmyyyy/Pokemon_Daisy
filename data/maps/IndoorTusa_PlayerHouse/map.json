@@ -83,7 +83,7 @@
       "x": 0,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_OPENING_SCENE_COMPLETE",
       "var_value": "0",
       "script": "Script_TusaTown_PlayerHouse_OpeningCutscene_1"
     },
@@ -92,7 +92,7 @@
       "x": 1,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_OPENING_SCENE_COMPLETE",
       "var_value": "0",
       "script": "Script_TusaTown_PlayerHouse_OpeningCutscene_2"
     },
@@ -101,7 +101,7 @@
       "x": 2,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_OPENING_SCENE_COMPLETE",
       "var_value": "0",
       "script": "Script_TusaTown_PlayerHouse_OpeningCutscene_3"
     },
@@ -110,7 +110,7 @@
       "x": 3,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_OPENING_SCENE_COMPLETE",
       "var_value": "0",
       "script": "Script_TusaTown_PlayerHouse_OpeningCutscene_4"
     },
@@ -119,7 +119,7 @@
       "x": 4,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_OPENING_SCENE_COMPLETE",
       "var_value": "0",
       "script": "Script_TusaTown_PlayerHouse_OpeningCutscene_5"
     }

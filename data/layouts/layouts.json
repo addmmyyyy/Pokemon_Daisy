@@ -4490,6 +4490,16 @@
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/AtkinsTown/border.bin",
       "blockdata_filepath": "data/layouts/AtkinsTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARCURRENT_CITY",
+      "name": "Clearcurrent_City_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Clearcurrent_City/border.bin",
+      "blockdata_filepath": "data/layouts/Clearcurrent_City/map.bin"
     }
   ]
 }

@@ -30,6 +30,20 @@
       "elevation": 0,
       "dest_map": "MAP_JOYCES_DUNGEON_BACK",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ATKINS_TOWN",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ATKINS_TOWN",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
