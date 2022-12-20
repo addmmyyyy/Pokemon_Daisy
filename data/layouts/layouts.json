@@ -4494,7 +4494,7 @@
     {
       "id": "LAYOUT_CLEARCURRENT_CITY",
       "name": "Clearcurrent_City_Layout",
-      "width": 64,
+      "width": 65,
       "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
