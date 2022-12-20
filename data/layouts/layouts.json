@@ -4494,12 +4494,22 @@
     {
       "id": "LAYOUT_CLEARCURRENT_CITY",
       "name": "Clearcurrent_City_Layout",
-      "width": 40,
-      "height": 60,
+      "width": 64,
+      "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Clearcurrent_City/border.bin",
       "blockdata_filepath": "data/layouts/Clearcurrent_City/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST",
+      "name": "TEST_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MossdeepGym",
+      "border_filepath": "data/layouts/TEST/border.bin",
+      "blockdata_filepath": "data/layouts/TEST/map.bin"
     }
   ]
 }

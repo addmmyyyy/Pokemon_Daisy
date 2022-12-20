@@ -1077,3 +1077,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/AtkinsTown/scripts.inc"
 
 	.include "data/maps/Clearcurrent_City/scripts.inc"
+
+	.include "data/maps/TEST/scripts.inc"
