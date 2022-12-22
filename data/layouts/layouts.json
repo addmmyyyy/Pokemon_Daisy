@@ -4510,6 +4510,36 @@
       "secondary_tileset": "gTileset_MossdeepGym",
       "border_filepath": "data/layouts/TEST/border.bin",
       "blockdata_filepath": "data/layouts/TEST/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIATHBEARRADH_CITY",
+      "name": "LiathbearradhCity_Layout",
+      "width": 43,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LiathbearradhCity/border.bin",
+      "blockdata_filepath": "data/layouts/LiathbearradhCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUSA_TOWN",
+      "name": "TusaTown_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/TusaTown/border.bin",
+      "blockdata_filepath": "data/layouts/TusaTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIATHBEARRADH_CITY_GYM",
+      "name": "LiathbearradhCity_Gym_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/LiathbearradhCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/LiathbearradhCity_Gym/map.bin"
     }
   ]
 }

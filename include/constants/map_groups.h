@@ -66,6 +66,8 @@
 #define MAP_ROUTE_13            (57 | (0 << 8))
 #define MAP_ATKINS_TOWN         (58 | (0 << 8))
 #define MAP_TEST                (59 | (0 << 8))
+#define MAP_LIATHBEARRADH_CITY  (60 | (0 << 8))
+#define MAP_TUSA_TOWN           (61 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -138,6 +140,7 @@
 #define MAP_PETALBURG_CITY_POKEMON_CENTER_1F (4 | (8 << 8))
 #define MAP_PETALBURG_CITY_POKEMON_CENTER_2F (5 | (8 << 8))
 #define MAP_PETALBURG_CITY_MART              (6 | (8 << 8))
+#define MAP_LIATHBEARRADH_CITY_GYM           (7 | (8 << 8))
 
 // gMapGroup_IndoorSlateport
 #define MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F      (0 | (9 << 8))

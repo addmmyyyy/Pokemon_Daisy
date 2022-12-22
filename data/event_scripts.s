@@ -1079,3 +1079,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Clearcurrent_City/scripts.inc"
 
 	.include "data/maps/TEST/scripts.inc"
+
+	.include "data/maps/LiathbearradhCity/scripts.inc"
+
+	.include "data/maps/TusaTown/scripts.inc"
+
+	.include "data/maps/LiathbearradhCity_Gym/scripts.inc"
