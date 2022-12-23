@@ -188,7 +188,11 @@
     "SlateportCity_PokemonCenter_1F",
     "SlateportCity_PokemonCenter_2F",
     "SlateportCity_Mart",
-    "Clearcurrent_City"
+    "Clearcurrent_City",
+    "Cleartide_Gym",
+    "ClearcurrentGym_BattleGround",
+    "Cleartide_Museum_1",
+    "Cleartide_Museum_2"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",

@@ -131,9 +131,9 @@
     },
     {
       "x": 5,
-      "y": 16,
+      "y": 17,
       "elevation": 0,
-      "dest_map": "MAP_LIATHBEARRADH_CITY",
+      "dest_map": "MAP_LIATHBEARRADH_CITY_GYM",
       "dest_warp_id": "0"
     },
     {

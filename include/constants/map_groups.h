@@ -158,6 +158,10 @@
 #define MAP_SLATEPORT_CITY_POKEMON_CENTER_2F       (12 | (9 << 8))
 #define MAP_SLATEPORT_CITY_MART                    (13 | (9 << 8))
 #define MAP_CLEARCURRENT_CITY                      (14 | (9 << 8))
+#define MAP_CLEARTIDE_GYM                          (15 | (9 << 8))
+#define MAP_CLEARCURRENT_GYM_BATTLE_GROUND         (16 | (9 << 8))
+#define MAP_CLEARTIDE_MUSEUM_1                     (17 | (9 << 8))
+#define MAP_CLEARTIDE_MUSEUM_2                     (18 | (9 << 8))
 
 // gMapGroup_IndoorMauville
 #define MAP_MAUVILLE_CITY_GYM               (0 | (10 << 8))

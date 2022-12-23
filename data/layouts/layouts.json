@@ -4534,12 +4534,52 @@
     {
       "id": "LAYOUT_LIATHBEARRADH_CITY_GYM",
       "name": "LiathbearradhCity_Gym_Layout",
-      "width": 30,
-      "height": 30,
+      "width": 11,
+      "height": 15,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/LiathbearradhCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/LiathbearradhCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARTIDE_GYM",
+      "name": "Cleartide_Gym_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/Cleartide_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Cleartide_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARCURRENT_GYM_BATTLE_GROUND",
+      "name": "ClearcurrentGym_BattleGround_Layout",
+      "width": 10,
+      "height": 11,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleTent",
+      "border_filepath": "data/layouts/ClearcurrentGym_BattleGround/border.bin",
+      "blockdata_filepath": "data/layouts/ClearcurrentGym_BattleGround/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARTIDE_MUSEUM_1",
+      "name": "Cleartide_Museum_1_Layout",
+      "width": 17,
+      "height": 11,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/Cleartide_Museum_1/border.bin",
+      "blockdata_filepath": "data/layouts/Cleartide_Museum_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARTIDE_MUSEUM_2",
+      "name": "Cleartide_Museum_2_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/Cleartide_Museum_2/border.bin",
+      "blockdata_filepath": "data/layouts/Cleartide_Museum_2/map.bin"
     }
   ]
 }

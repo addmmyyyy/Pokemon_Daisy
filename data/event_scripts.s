@@ -1085,3 +1085,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TusaTown/scripts.inc"
 
 	.include "data/maps/LiathbearradhCity_Gym/scripts.inc"
+
+	.include "data/maps/Cleartide_Gym/scripts.inc"
+
+	.include "data/maps/ClearcurrentGym_BattleGround/scripts.inc"
+
+	.include "data/maps/Cleartide_Museum_1/scripts.inc"
+
+	.include "data/maps/Cleartide_Museum_2/scripts.inc"
