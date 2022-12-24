@@ -98,7 +98,11 @@
     "AtkinsTown",
     "TEST",
     "LiathbearradhCity",
-    "TusaTown"
+    "TusaTown",
+    "Route_1",
+    "Route1_Gracidea_Field",
+    "Route2",
+    "Route_5"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -171,7 +175,13 @@
     "PetalburgCity_PokemonCenter_1F",
     "PetalburgCity_PokemonCenter_2F",
     "PetalburgCity_Mart",
-    "LiathbearradhCity_Gym"
+    "LiathbearradhCity_Gym",
+    "LiabaraCity_PokeCenter",
+    "LiabaraCity_Pokemart",
+    "LiabaraCity_Cottage_1",
+    "LiabaraCity_Cottage_2",
+    "LiabaraCity_Museum",
+    "Liabara_City_Lab"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
@@ -192,7 +202,12 @@
     "Cleartide_Gym",
     "ClearcurrentGym_BattleGround",
     "Cleartide_Museum_1",
-    "Cleartide_Museum_2"
+    "Cleartide_Museum_2",
+    "Cleartide_PokemonCentre",
+    "Cleartide_House_1",
+    "NewMap1",
+    "CleartideHouse_3",
+    "Cleartide_Battle_Restaurant"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",

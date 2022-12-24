@@ -4515,7 +4515,7 @@
       "id": "LAYOUT_LIATHBEARRADH_CITY",
       "name": "LiathbearradhCity_Layout",
       "width": 43,
-      "height": 48,
+      "height": 49,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/LiathbearradhCity/border.bin",
@@ -4580,6 +4580,156 @@
       "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/Cleartide_Museum_2/border.bin",
       "blockdata_filepath": "data/layouts/Cleartide_Museum_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_1",
+      "name": "Route_1_Layout",
+      "width": 84,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route_1/border.bin",
+      "blockdata_filepath": "data/layouts/Route_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1_GRACIDEA_FIELD",
+      "name": "Route1_Gracidea_Field_Layout",
+      "width": 18,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route1_Gracidea_Field/border.bin",
+      "blockdata_filepath": "data/layouts/Route1_Gracidea_Field/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 42,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_5",
+      "name": "Route_5_Layout",
+      "width": 31,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Route_5/border.bin",
+      "blockdata_filepath": "data/layouts/Route_5/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARTIDE_POKEMON_CENTRE",
+      "name": "Cleartide_PokemonCentre_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Cleartide_PokemonCentre/border.bin",
+      "blockdata_filepath": "data/layouts/Cleartide_PokemonCentre/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARTIDE_HOUSE_1",
+      "name": "Cleartide_House_1_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Cleartide_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/Cleartide_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARTIDE_HOUSE_3",
+      "name": "CleartideHouse_3_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CleartideHouse_3/border.bin",
+      "blockdata_filepath": "data/layouts/CleartideHouse_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARTIDE_BATTLE_RESTAURANT",
+      "name": "Cleartide_Battle_Restaurant_Layout",
+      "width": 18,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Cleartide_Battle_Restaurant/border.bin",
+      "blockdata_filepath": "data/layouts/Cleartide_Battle_Restaurant/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIABARA_CITY_POKE_CENTER",
+      "name": "LiabaraCity_PokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/LiabaraCity_PokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/LiabaraCity_PokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIABARA_CITY_POKEMART",
+      "name": "LiabaraCity_Pokemart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/LiabaraCity_Pokemart/border.bin",
+      "blockdata_filepath": "data/layouts/LiabaraCity_Pokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIABARA_CITY_COTTAGE_1",
+      "name": "LiabaraCity_Cottage_1_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LiabaraCity_Cottage_1/border.bin",
+      "blockdata_filepath": "data/layouts/LiabaraCity_Cottage_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIABARA_CITY_COTTAGE_2",
+      "name": "LiabaraCity_Cottage_2_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LiabaraCity_Cottage_2/border.bin",
+      "blockdata_filepath": "data/layouts/LiabaraCity_Cottage_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIABARA_CITY_MUSEUM",
+      "name": "LiabaraCity_Museum_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LiabaraCity_Museum/border.bin",
+      "blockdata_filepath": "data/layouts/LiabaraCity_Museum/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIABARA_CITY_LAB",
+      "name": "Liabara_City_Lab_Layout",
+      "width": 13,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/Liabara_City_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/Liabara_City_Lab/map.bin"
     }
   ]
 }

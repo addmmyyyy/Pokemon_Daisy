@@ -1093,3 +1093,33 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Cleartide_Museum_1/scripts.inc"
 
 	.include "data/maps/Cleartide_Museum_2/scripts.inc"
+
+	.include "data/maps/Route_1/scripts.inc"
+
+	.include "data/maps/Route1_Gracidea_Field/scripts.inc"
+
+	.include "data/maps/Route2/scripts.inc"
+
+	.include "data/maps/Route_5/scripts.inc"
+
+	.include "data/maps/Cleartide_PokemonCentre/scripts.inc"
+
+	.include "data/maps/Cleartide_House_1/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/CleartideHouse_3/scripts.inc"
+
+	.include "data/maps/Cleartide_Battle_Restaurant/scripts.inc"
+
+	.include "data/maps/LiabaraCity_PokeCenter/scripts.inc"
+
+	.include "data/maps/LiabaraCity_Pokemart/scripts.inc"
+
+	.include "data/maps/LiabaraCity_Cottage_1/scripts.inc"
+
+	.include "data/maps/LiabaraCity_Cottage_2/scripts.inc"
+
+	.include "data/maps/LiabaraCity_Museum/scripts.inc"
+
+	.include "data/maps/Liabara_City_Lab/scripts.inc"

@@ -12,7 +12,13 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_ROUTE_5",
+      "offset": 19,
+      "direction": "up"
+    }
+  ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
@@ -95,10 +101,24 @@
   ],
   "warp_events": [
     {
-      "x": 42,
-      "y": 14,
+      "x": 41,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_CLEARCURRENT_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 45,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_CLEARTIDE_MUSEUM_1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_CLEARTIDE_GYM",
       "dest_warp_id": "0"
     }
   ],

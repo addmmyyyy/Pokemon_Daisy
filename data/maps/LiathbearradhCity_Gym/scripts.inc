@@ -1,6 +1,24 @@
 LiathbearradhCity_Gym_MapScripts::
 	.byte 0
 
+
+LiabaraGym_EventScript_GymGuide::
+  lock
+  faceplayer
+	msgbox LiabaraGym_Text_GymGuide MSGBOX_DEFAULT
+	releaseall
+	end
+
+LiabaraGym_Text_GymGuide:
+	.string "Yo, champ-in-the-making! Welcome \n"
+	.string "to the Liabara City gym. Don't be \l"
+	.string "fooled by all this greenery, Carraig \l"
+	.string "is an A-grade mineral freak. His Rock \l"
+	.string "Pokémon will crush any Flying or Bug types \l"
+	.string "you bring. The local Grass types however should \l "
+	.string "give you an advantage, as well as any Ground or"
+	.string "Water types you can get your tiny, tiny hands on. $"
+
 LiabaraGym_EventScript_Oliver::
 	trainerbattle_single TRAINER_D_OLIVER, LiabaraGym_Text_OliverIntro, LiabaraGym_Text_OliverDefeat
 	msgbox LiabaraGym_Text_OliverPostBattle, MSGBOX_AUTOCLOSE
