@@ -1,37 +1,56 @@
-static const struct TrainerMonNoItemDefaultMoves sParty_Sawyer1[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_Oliver[] = {
     {
     .iv = 0,
-    .lvl = 21,
-    .species = SPECIES_GEODUDE,
+    .lvl = 12,
+    .species = SPECIES_SKIDDO,
+    .moves = {MOVE_RAZOR_LEAF, MOVE_LEECH_SEED, MOVE_TAIL_WHIP, MOVE_TACKLE}
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Carraig_1[] = {
     {
-    .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_POOCHYENA,
-    }
-};
-
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout2[] = {
-    {
-    .iv = 0,
-    .lvl = 31,
-    .species = SPECIES_ZUBAT,
+    .iv = 100,
+    .lvl = 13,
+    .species = SPECIES_GEODUDE_ALOLAN,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_SPARK, MOVE_DEFENSE_CURL, MOVE_ROCK_TOMB}
     },
     {
-    .iv = 0,
-    .lvl = 31,
-    .species = SPECIES_CARVANHA,
+    .iv = 100,
+    .lvl = 13,
+    .species = SPECIES_ARCHEN,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_ROCK_TOMB, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK}
+    },
+    {
+    .iv = 200,
+    .lvl = 15,
+    .species = SPECIES_CARKOL,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_FLAME_CHARGE, MOVE_BULLDOZE, MOVE_ROCK_TOMB}
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout3[] = {
+
+
+
+
+
+static const struct TrainerMonNoItemCustomMoves sParty_Padraig[] = {
     {
     .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_ZUBAT,
+    .lvl = 12,
+    .species = SPECIES_BINACLE,
+    .moves = {MOVE_ROCK_TOMB, MOVE_FURY_CUTTER, MOVE_RAZOR_SHELL}
+    }
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_Aodhan[] = {
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_ROLYCOLY,
+    .moves = {MOVE_ROCK_TOMB, MOVE_EMBER}
     }
 };
 
