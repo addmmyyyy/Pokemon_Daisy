@@ -27,7 +27,7 @@
       "x": 16,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_JOYCES_DUNGEON_MAIN",
+      "dest_map": "MAP_ROUTE_13",
       "dest_warp_id": "3"
     },
     {
@@ -36,6 +36,13 @@
       "elevation": 0,
       "dest_map": "MAP_JOYCES_DUNGEON_MAIN",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 46,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE_4",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

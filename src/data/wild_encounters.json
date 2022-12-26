@@ -11590,7 +11590,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SKWOVET"
+                "species": "SPECIES_EMOLGA"
               },
               {
                 "min_level": 5,
@@ -11703,7 +11703,7 @@
           "map": "MAP_LIATHBEARRADH_CITY",
           "base_label": "gLiathbearradhCity0",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 5,
@@ -12080,7 +12080,7 @@
           "map": "MAP_ROUTE_4",
           "base_label": "gRoute_40",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 28,
             "mons": [
               {
                 "min_level": 5,
@@ -12136,6 +12136,75 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_VULPIX"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ROUTE_13",
+          "base_label": "gRoute_130",
+          "land_mons": {
+            "encounter_rate": 24,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CLAUNCHER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SKRELP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BINACLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SKRELP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CLAUNCHER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BINACLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BINACLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BINACLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SKRELP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CLAUNCHER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_POPPLIO"
               },
               {
                 "min_level": 5,

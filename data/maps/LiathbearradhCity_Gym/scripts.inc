@@ -105,7 +105,7 @@ LiabaraGym_Text_CarraigIntro_4:
 
 
 LiabaraGym_Text_CarraigDefeat:
-	.string "Ah geez"
+	.string "Ah geez $"
 
 LiabaraGym_Text_CarraigPostBattle:
-	.string "filler"
+	.string "filler $"

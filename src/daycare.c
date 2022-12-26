@@ -1362,4 +1362,3 @@ static u8 ModifyBreedingScoreForOvalCharm(u8 score)
 
     return score;
 }
-

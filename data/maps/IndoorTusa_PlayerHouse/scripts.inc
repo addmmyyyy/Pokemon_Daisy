@@ -16,10 +16,13 @@ IndoorTusa_PlayerHouse_MapScripts::
 		bufferleadmonspeciesname 0
 		msgbox Text_Obtained_Starter, MSGBOX_DEFAULT
 		delay 10
+		applymovement OBJ_EVENT_ID_PLAYER, Movement_TurnDown
+		applymovement LOCALID_CARRAIG, Movement_TurnUp
 		msgbox Text_Carraig6, MSGBOX_DEFAULT
 		bufferleadmonspeciesname 0
 		removeobject LOCALID_CARRAIGBAG
 		setflag FLAG_HIDE_PETALBURG_CITY_WALLY
+		applymovement LOCALID_CARRAIG, Movement_TurnLeft
 		msgbox Text_Carraig7, MSGBOX_DEFAULT
 		delay 15
 		applymovement LOCALID_CARRAIG Movement_CarraigLeave
@@ -51,6 +54,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 		msgbox Text_Mom3, MSGBOX_DEFAULT
 		msgbox Text_Carraig4, MSGBOX_DEFAULT
 		clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
+		addobject LOCALID_CARRAIGBAG
 		msgbox Text_Carraig5, MSGBOX_DEFAULT
 		msgbox Text_Mom4
 		release
@@ -127,7 +131,8 @@ IndoorTusa_PlayerHouse_MapScripts::
 		.string "MOM: Do you not remember Carraig?$"
 
 	Text_Carraig2:
-		.string "CARRAIG: Sure, in fairness I was gone awhile$"
+		.string "CARRAIG: Sure, in fairness I was gone \n"
+		.string "awhile $"
 
 	Text_Mom2:
 		.string "MOM: He's Ethel's one. He was \n"
@@ -149,7 +154,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 		.string "their first stop. $"
 
 	Text_Carraig4:
-		.string "CARRAIG Oh, that's great! Actually \n"
+		.string "CARRAIG: Oh, that's great! Actually \n"
 		.string "{PLAYER}, I have something for \l"
 		.string "you in that case. $"
 
@@ -166,14 +171,14 @@ IndoorTusa_PlayerHouse_MapScripts::
 		.string "MOM: Ahh how wonderful. $"
 
 	Text_Carraig6:
-		.string "CARRAIG: Okay {PLAYER}. That starter \n$"
+		.string "CARRAIG: Okay {PLAYER}. That starter \n"
 		.string "isn't free. I need you to \l"
 		.string "do some advertising for my gym. \l"
 		.string "If you see any trainers tell 'em the' \l"
 		.string "Liabara City Gym is officially reopened.$"
 
 	Text_Carraig7:
-		.string "Okay, I'll be heading out now. \n"
+		.string "CARRAIG: Okay, I'll be heading out now. \n"
 		.string "Looking forward to see what you \l"
 		.string "and {STR_VAR_1} can do.$"
 
