@@ -17,7 +17,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 19,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_TUSA_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 52,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_ATKINS_TOWN",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

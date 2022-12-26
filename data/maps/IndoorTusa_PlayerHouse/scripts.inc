@@ -4,11 +4,6 @@ IndoorTusa_PlayerHouse_MapScripts::
 	.set LOCALID_MOM, 1
 	.set LOCALID_CARRAIG, 2
 	.set LOCALID_CARRAIGBAG, 3
-	map_script MAP_SCRIPT_ON_LOAD Script_TusaTown_PlayerHouse_Setup
-
-	Script_TusaTown_PlayerHouse_Setup::
-		setflag FLAG_TEMP_1
-		end
 
 	Script_TusaTown_PlayerHouse_CarraigsBag::
 		lock
@@ -21,6 +16,12 @@ IndoorTusa_PlayerHouse_MapScripts::
 		bufferleadmonspeciesname 0
 		msgbox Text_Obtained_Starter, MSGBOX_DEFAULT
 		delay 10
+		msgbox Text_Carraig6, MSGBOX_DEFAULT
+		bufferleadmonspeciesname 0
+		removeobject LOCALID_CARRAIGBAG
+		setflag FLAG_HIDE_PETALBURG_CITY_WALLY
+		msgbox Text_Carraig7, MSGBOX_DEFAULT
+		delay 15
 		applymovement LOCALID_CARRAIG Movement_CarraigLeave
 		waitmovement 0
 		removeobject LOCALID_CARRAIG
@@ -49,7 +50,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 		waitmovement 0
 		msgbox Text_Mom3, MSGBOX_DEFAULT
 		msgbox Text_Carraig4, MSGBOX_DEFAULT
-		clearflag FLAG_TEMP_1
+		clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
 		msgbox Text_Carraig5, MSGBOX_DEFAULT
 		msgbox Text_Mom4
 		release
@@ -113,50 +114,68 @@ IndoorTusa_PlayerHouse_MapScripts::
 		.string "You obtained {STR_VAR_1}! $"
 
 	Text_MomCallsYouOver:
-		.string "Hey! {PLAYER}\n"
-		.string "Come over here.$"
+		.string "MOM: Hey! {PLAYER}\n"
+		.string "Come here to me.$"
 
 	Text_Carraig1:
-		.string "Geez, is that really \n"
+		.string "???: Geez, is that really \n"
 		.string "{PLAYER}? \l"
 		.string "You haven't half grown since \l"
 		.string "I last saw you.$"
 
 	Text_Mom1:
-		.string "Do you not remember Carraig?$"
+		.string "MOM: Do you not remember Carraig?$"
 
 	Text_Carraig2:
-		.string "Sure, in fairness I was gone awhile$"
+		.string "CARRAIG: Sure, in fairness I was gone awhile$"
 
 	Text_Mom2:
-		.string "He's GRASS_E4's one. He was \n"
-		.string "out in Unova.$"
+		.string "MOM: He's Ethel's one. He was \n"
+		.string "out in Unova the last few years.$"
 
 	Text_Carraig3:
-		.string "Yeah, had to come back though. \n"
-		.string "Mam couldn't find a replacement \l"
-		.string "for the gym. $"
+		.string "CARRAIG: Yeah but I'm back now \n"
+		.string "for the foreseeable.  \l"
+		.string "Mam couldn't find a replacement for \l"
+		.string "her Gym in Liabara City, so I'll \l"
+		.string "be taking it over. $"
 
 	Text_Mom3:
-		.string "Oh it will be great to see the gym \n"
+		.string "MOM: It will be great to see it \n"
 		.string "in use again. \l"
-		.string "I know {PLAYER} has been wanting\l"
-		.string "to try the league challenge. $"
+		.string "Dead handy too, I know {PLAYER} has \l"
+		.string "been wanting to try the league challenge. \l"
+		.string "Liabara isn't too far away for \l"
+		.string "their first stop. $"
 
 	Text_Carraig4:
-		.string "Ah, that's great! Actually I have \n"
-		.string "something for you in that case. $"
+		.string "CARRAIG Oh, that's great! Actually \n"
+		.string "{PLAYER}, I have something for \l"
+		.string "you in that case. $"
 
 	Text_Carraig5:
-		.string "Since, I'm the local leader now, \n"
-		.string "I'll need to hand out first \l"
-		.string "Pokemon to the weans. \l"
-		.string "Caught these little ones while travelling. \l"
+		.string "CARRAIG: As the local Gym Leader \n"
+		.string "its my responsibility to \l"
+		.string "hand out Pokemon to young \l"
+		.string "trainers \l"
+		.string "I caught these little ones while travelling. \l"
 		.string "How about you take first pick \l"
 		.string "{PLAYER}? $"
 
 	Text_Mom4:
-		.string "Ahh how wonderful. $"
+		.string "MOM: Ahh how wonderful. $"
+
+	Text_Carraig6:
+		.string "CARRAIG: Okay {PLAYER}. That starter \n$"
+		.string "isn't free. I need you to \l"
+		.string "do some advertising for my gym. \l"
+		.string "If you see any trainers tell 'em the' \l"
+		.string "Liabara City Gym is officially reopened.$"
+
+	Text_Carraig7:
+		.string "Okay, I'll be heading out now. \n"
+		.string "Looking forward to see what you \l"
+		.string "and {STR_VAR_1} can do.$"
 
 	Movement_Exclam:
 		emote_exclamation_mark

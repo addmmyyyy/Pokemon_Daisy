@@ -102,7 +102,9 @@
     "Route_1",
     "Route1_Gracidea_Field",
     "Route2",
-    "Route_5"
+    "Route_5",
+    "Route_2_Cave",
+    "Route_4"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -207,7 +209,9 @@
     "Cleartide_House_1",
     "NewMap1",
     "CleartideHouse_3",
-    "Cleartide_Battle_Restaurant"
+    "Cleartide_Battle_Restaurant",
+    "Cleartide_Museum_3",
+    "Cleartide_Museum_4"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",

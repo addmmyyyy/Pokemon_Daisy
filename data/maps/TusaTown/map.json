@@ -17,13 +17,24 @@
       "map": "MAP_ROUTE2",
       "offset": 6,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE_1",
+      "offset": 4,
+      "direction": "left"
     }
   ],
   "object_events": [
 
   ],
   "warp_events": [
-
+    {
+      "x": 19,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE_13",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

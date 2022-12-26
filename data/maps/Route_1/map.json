@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE1_GRACIDEA_FIELD",
       "offset": 17,
       "direction": "up"
+    },
+    {
+      "map": "MAP_TUSA_TOWN",
+      "offset": -4,
+      "direction": "right"
     }
   ],
   "object_events": [

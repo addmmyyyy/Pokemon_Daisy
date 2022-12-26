@@ -1123,3 +1123,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/LiabaraCity_Museum/scripts.inc"
 
 	.include "data/maps/Liabara_City_Lab/scripts.inc"
+
+	.include "data/maps/Cleartide_Museum_3/scripts.inc"
+
+	.include "data/maps/Cleartide_Museum_4/scripts.inc"
+
+	.include "data/maps/Route_2_Cave/scripts.inc"
+
+	.include "data/maps/Route_4/scripts.inc"

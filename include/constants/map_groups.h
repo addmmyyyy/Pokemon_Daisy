@@ -72,6 +72,8 @@
 #define MAP_ROUTE1_GRACIDEA_FIELD (63 | (0 << 8))
 #define MAP_ROUTE2                (64 | (0 << 8))
 #define MAP_ROUTE_5               (65 | (0 << 8))
+#define MAP_ROUTE_2_CAVE          (66 | (0 << 8))
+#define MAP_ROUTE_4               (67 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -177,6 +179,8 @@
 #define MAP_NEW_MAP1                               (21 | (9 << 8))
 #define MAP_CLEARTIDE_HOUSE_3                      (22 | (9 << 8))
 #define MAP_CLEARTIDE_BATTLE_RESTAURANT            (23 | (9 << 8))
+#define MAP_CLEARTIDE_MUSEUM_3                     (24 | (9 << 8))
+#define MAP_CLEARTIDE_MUSEUM_4                     (25 | (9 << 8))
 
 // gMapGroup_IndoorMauville
 #define MAP_MAUVILLE_CITY_GYM               (0 | (10 << 8))
