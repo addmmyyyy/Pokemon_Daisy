@@ -1131,3 +1131,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route_2_Cave/scripts.inc"
 
 	.include "data/maps/Route_4/scripts.inc"
+
+	.include "data/maps/MineHouse_1/scripts.inc"
+
+	.include "data/maps/MineHouse_2/scripts.inc"
+
+	.include "data/maps/MineHouse_3/scripts.inc"
+
+	.include "data/maps/MineHouse_4/scripts.inc"

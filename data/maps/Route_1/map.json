@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_ROUTE1_GRACIDEA_FIELD",
-      "offset": 17,
+      "offset": 15,
       "direction": "up"
     },
     {
       "map": "MAP_TUSA_TOWN",
-      "offset": -4,
+      "offset": -16,
       "direction": "right"
     }
   ],
@@ -28,7 +28,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 12,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_INDOOR_TUSA_PLAYER_HOUSE",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
 

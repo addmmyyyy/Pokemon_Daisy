@@ -4524,8 +4524,8 @@
     {
       "id": "LAYOUT_TUSA_TOWN",
       "name": "TusaTown_Layout",
-      "width": 30,
-      "height": 40,
+      "width": 35,
+      "height": 47,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/TusaTown/border.bin",
@@ -4584,8 +4584,8 @@
     {
       "id": "LAYOUT_ROUTE_1",
       "name": "Route_1_Layout",
-      "width": 84,
-      "height": 30,
+      "width": 50,
+      "height": 44,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route_1/border.bin",
@@ -4615,7 +4615,7 @@
       "id": "LAYOUT_ROUTE_5",
       "name": "Route_5_Layout",
       "width": 31,
-      "height": 40,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Route_5/border.bin",
@@ -4764,12 +4764,52 @@
     {
       "id": "LAYOUT_ROUTE_4",
       "name": "Route_4_Layout",
-      "width": 80,
-      "height": 21,
+      "width": 81,
+      "height": 23,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route_4/border.bin",
       "blockdata_filepath": "data/layouts/Route_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_MINE_HOUSE_1",
+      "name": "MineHouse_1_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MineHouse_1/border.bin",
+      "blockdata_filepath": "data/layouts/MineHouse_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MINE_HOUSE_2",
+      "name": "MineHouse_2_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MineHouse_2/border.bin",
+      "blockdata_filepath": "data/layouts/MineHouse_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MINE_HOUSE_3",
+      "name": "MineHouse_3_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MineHouse_3/border.bin",
+      "blockdata_filepath": "data/layouts/MineHouse_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_MINE_HOUSE_4",
+      "name": "MineHouse_4_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MineHouse_4/border.bin",
+      "blockdata_filepath": "data/layouts/MineHouse_4/map.bin"
     }
   ]
 }

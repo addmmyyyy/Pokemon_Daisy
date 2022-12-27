@@ -183,7 +183,11 @@
     "LiabaraCity_Cottage_1",
     "LiabaraCity_Cottage_2",
     "LiabaraCity_Museum",
-    "Liabara_City_Lab"
+    "Liabara_City_Lab",
+    "MineHouse_1",
+    "MineHouse_2",
+    "MineHouse_3",
+    "MineHouse_4"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",

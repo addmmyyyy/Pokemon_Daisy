@@ -153,6 +153,10 @@
 #define MAP_LIABARA_CITY_COTTAGE_2           (11 | (8 << 8))
 #define MAP_LIABARA_CITY_MUSEUM              (12 | (8 << 8))
 #define MAP_LIABARA_CITY_LAB                 (13 | (8 << 8))
+#define MAP_MINE_HOUSE_1                     (14 | (8 << 8))
+#define MAP_MINE_HOUSE_2                     (15 | (8 << 8))
+#define MAP_MINE_HOUSE_3                     (16 | (8 << 8))
+#define MAP_MINE_HOUSE_4                     (17 | (8 << 8))
 
 // gMapGroup_IndoorSlateport
 #define MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F      (0 | (9 << 8))

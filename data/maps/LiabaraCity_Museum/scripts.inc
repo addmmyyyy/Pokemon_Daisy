@@ -2,7 +2,7 @@ LiabaraCity_Museum_MapScripts::
 	.byte 0
 
 LiabaraMuseum_EventScript_Guide::
-	msgbox LiabaraGym_Text_MineClosed MSGBOX_DEFAULT
+	msgbox LiabaraGym_Text_MineClosed MSGBOX_NPC
 	end
 
 LiabaraGym_Text_MineClosed:

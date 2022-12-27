@@ -63,7 +63,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 	Script_TusaTown_PlayerHouse_OpeningCutscene_1::
 		setvar VAR_OPENING_SCENE_COMPLETE, 1
 		lock
-		msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
+		msgbox Text_MomCallsYouOver, MSGBOX_NPC
 		applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable1
 		waitmovement 0
 		goto Script_TusaTown_PlayerHouse_OpeningCutscene
