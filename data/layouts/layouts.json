@@ -718,7 +718,7 @@
       "height": 7,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Contest",
-      "border_filepath": "data/layouts/FallarborTown_LeftoverRSContestLobby/border.bin",
+      "border_filepath": "data/layouts/FallarborTown_LeftoverR\u0000\u0000\u0000\u0000testLobby/border.bin",
       "blockdata_filepath": "data/layouts/FallarborTown_LeftoverRSContestLobby/map.bin"
     },
     {
@@ -2728,7 +2728,7 @@
       "height": 6,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleFrontier",
-      "border_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator/border.bin",
+      "border_filepath": "data/layouts/LilycoveCity_Department\u0000\u0000\u0000\u0000eElevator/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator/map.bin"
     },
     {
@@ -3338,7 +3338,7 @@
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleDome",
-      "border_filepath": "data/layouts/BattleFrontier_BattleDomePreBattleRoom/border.bin",
+      "border_filepath": "data/layouts/BattleFrontier_BattleDo\u0000\u0000\u0000\u0000eBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleDomePreBattleRoom/map.bin"
     },
     {
@@ -3438,7 +3438,7 @@
       "height": 10,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BattlePalace",
-      "border_filepath": "data/layouts/BattleFrontier_BattlePalaceBattleRoom/border.bin",
+      "border_filepath": "data/layouts/BattleFrontier_BattlePa\u0000\u0000\u0000\u0000BattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattlePalaceBattleRoom/map.bin"
     },
     {
@@ -3468,7 +3468,7 @@
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleFactory",
-      "border_filepath": "data/layouts/BattleFrontier_BattleFactoryPreBattleRoom/border.bin",
+      "border_filepath": "data/layouts/BattleFrontier_BattleFa\u0000\u0000\u0000\u0000yPreBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleFactoryPreBattleRoom/map.bin"
     },
     {
@@ -4544,7 +4544,7 @@
     {
       "id": "LAYOUT_CLEARTIDE_GYM",
       "name": "Cleartide_Gym_Layout",
-      "width": 30,
+      "width": 43,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_SootopolisGym",

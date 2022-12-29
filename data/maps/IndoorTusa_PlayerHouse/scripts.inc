@@ -29,6 +29,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 		waitmovement 0
 		removeobject LOCALID_CARRAIG
 		setflag FLAG_HIDE_PETALBURG_CITY_WALLY
+		setvar VAR_OPENING_SCENE_COMPLETE, 1
 		release
 		end
 
@@ -54,6 +55,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 		msgbox Text_Mom3, MSGBOX_DEFAULT
 		msgbox Text_Carraig4, MSGBOX_DEFAULT
 		clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
+		clearflag FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD
 		addobject LOCALID_CARRAIGBAG
 		msgbox Text_Carraig5, MSGBOX_DEFAULT
 		msgbox Text_Mom4
@@ -61,7 +63,6 @@ IndoorTusa_PlayerHouse_MapScripts::
 		end
 
 	Script_TusaTown_PlayerHouse_OpeningCutscene_1::
-		setvar VAR_OPENING_SCENE_COMPLETE, 1
 		lock
 		msgbox Text_MomCallsYouOver, MSGBOX_NPC
 		applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable1
@@ -70,7 +71,6 @@ IndoorTusa_PlayerHouse_MapScripts::
 		end
 
 	Script_TusaTown_PlayerHouse_OpeningCutscene_2::
-			setvar VAR_OPENING_SCENE_COMPLETE, 1
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable2
@@ -79,7 +79,6 @@ IndoorTusa_PlayerHouse_MapScripts::
 		end
 
 	Script_TusaTown_PlayerHouse_OpeningCutscene_3::
-			setvar VAR_OPENING_SCENE_COMPLETE, 1
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable3
@@ -88,7 +87,6 @@ IndoorTusa_PlayerHouse_MapScripts::
 		end
 
 	Script_TusaTown_PlayerHouse_OpeningCutscene_4::
-			setvar VAR_OPENING_SCENE_COMPLETE, 1
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable4
@@ -97,7 +95,6 @@ IndoorTusa_PlayerHouse_MapScripts::
 		end
 
 	Script_TusaTown_PlayerHouse_OpeningCutscene_5::
-			setvar VAR_OPENING_SCENE_COMPLETE, 1
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable5
@@ -106,13 +103,20 @@ IndoorTusa_PlayerHouse_MapScripts::
 		end
 
 	Script_TusaTown_PlayerHouse_OpeningCutscene_6::
-			setvar VAR_OPENING_SCENE_COMPLETE, 1
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable6
 			waitmovement 0
 			goto Script_TusaTown_PlayerHouse_OpeningCutscene
 		end
+
+	Script_TusaTown_PlayerHouse_CallBack::
+		msgbox Text_CalledBack, MSGBOX_NPC
+		applymovement OBJ_EVENT_ID_PLAYER Movement_WalkRight
+		end
+
+	Text_CalledBack:
+		.string "Mom: {PLAYER}, where are you going? $"
 
 	Text_Obtained_Starter:
 		.string "You obtained {STR_VAR_1}! $"
@@ -132,7 +136,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 
 	Text_Carraig2:
 		.string "CARRAIG: Sure, in fairness I was gone \n"
-		.string "awhile $"
+		.string "awhile. $"
 
 	Text_Mom2:
 		.string "MOM: He's Ethel's one. He was \n"
@@ -200,6 +204,10 @@ IndoorTusa_PlayerHouse_MapScripts::
 
 	Movement_TurnRight:
 		face_right
+		step_end
+
+	Movement_WalkRight:
+		walk_right
 		step_end
 
 	Movement_CarraigLeave:

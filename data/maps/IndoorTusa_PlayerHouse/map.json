@@ -66,14 +66,14 @@
       "x": 2,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_ATKINS_TOWN",
+      "dest_map": "MAP_ROUTE_1",
       "dest_warp_id": "0"
     },
     {
       "x": 1,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_CLEARCURRENT_CITY",
+      "dest_map": "MAP_ROUTE_1",
       "dest_warp_id": "0"
     }
   ],
@@ -122,6 +122,33 @@
       "var": "VAR_OPENING_SCENE_COMPLETE",
       "var_value": "0",
       "script": "Script_TusaTown_PlayerHouse_OpeningCutscene_5"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_OPENING_SCENE_COMPLETE",
+      "var_value": "0",
+      "script": "Script_TusaTown_PlayerHouse_CallBack"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_OPENING_SCENE_COMPLETE",
+      "var_value": "0",
+      "script": "Script_TusaTown_PlayerHouse_CallBack"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_OPENING_SCENE_COMPLETE",
+      "var_value": "0",
+      "script": "Script_TusaTown_PlayerHouse_CallBack"
     }
   ],
   "bg_events": [
