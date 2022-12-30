@@ -4445,7 +4445,7 @@
       "id": "LAYOUT_ATKINS_LAKE",
       "name": "Atkins_Lake_Layout",
       "width": 40,
-      "height": 20,
+      "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Atkins_Lake/border.bin",
@@ -4485,7 +4485,7 @@
       "id": "LAYOUT_ATKINS_TOWN",
       "name": "AtkinsTown_Layout",
       "width": 54,
-      "height": 34,
+      "height": 36,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/AtkinsTown/border.bin",
@@ -4810,6 +4810,76 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/MineHouse_4/border.bin",
       "blockdata_filepath": "data/layouts/MineHouse_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP2",
+      "name": "NewMap2_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NewMap2/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ATKINS_TOWN_HOUSE_1",
+      "name": "AtkinsTown_House_1_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/AtkinsTown_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/AtkinsTown_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ATKINS_TOWN_HOUSE_2",
+      "name": "AtkinsTown_House_2_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/AtkinsTown_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/AtkinsTown_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ATKINS_TOWN_HOUSE_3",
+      "name": "AtkinsTown_House_3_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/AtkinsTown_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/AtkinsTown_House_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUSA_TOWN_HOUSE_1",
+      "name": "TusaTown_House_1_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TusaTown_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/TusaTown_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUSA_TOWN_HOUSE_2",
+      "name": "TusaTown_House_2_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TusaTown_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/TusaTown_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUSA_TOWN_HOUSE_3",
+      "name": "TusaTown_House_3_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TusaTown_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/TusaTown_House_3/map.bin"
     }
   ]
 }

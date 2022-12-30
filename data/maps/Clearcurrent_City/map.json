@@ -127,6 +127,27 @@
       "elevation": 0,
       "dest_map": "MAP_CLEARTIDE_BATTLE_RESTAURANT",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_CLEARTIDE_HOUSE_1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAP1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAP2",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

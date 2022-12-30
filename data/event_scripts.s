@@ -1139,3 +1139,17 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MineHouse_3/scripts.inc"
 
 	.include "data/maps/MineHouse_4/scripts.inc"
+
+	.include "data/maps/NewMap2/scripts.inc"
+
+	.include "data/maps/AtkinsTown_House_1/scripts.inc"
+
+	.include "data/maps/AtkinsTown_House_2/scripts.inc"
+
+	.include "data/maps/AtkinsTown_House_3/scripts.inc"
+
+	.include "data/maps/TusaTown_House_1/scripts.inc"
+
+	.include "data/maps/TusaTown_House_2/scripts.inc"
+
+	.include "data/maps/TusaTown_House_3/scripts.inc"

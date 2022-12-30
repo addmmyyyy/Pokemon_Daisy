@@ -81,6 +81,9 @@
 #define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F        (2 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F        (3 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
+#define MAP_TUSA_TOWN_HOUSE_1                    (5 | (1 << 8))
+#define MAP_TUSA_TOWN_HOUSE_2                    (6 | (1 << 8))
+#define MAP_TUSA_TOWN_HOUSE_3                    (7 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))
@@ -185,6 +188,7 @@
 #define MAP_CLEARTIDE_BATTLE_RESTAURANT            (23 | (9 << 8))
 #define MAP_CLEARTIDE_MUSEUM_3                     (24 | (9 << 8))
 #define MAP_CLEARTIDE_MUSEUM_4                     (25 | (9 << 8))
+#define MAP_NEW_MAP2                               (26 | (9 << 8))
 
 // gMapGroup_IndoorMauville
 #define MAP_MAUVILLE_CITY_GYM               (0 | (10 << 8))
@@ -251,6 +255,9 @@
 #define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_5F       (20 | (13 << 8))
 #define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP  (21 | (13 << 8))
 #define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR (22 | (13 << 8))
+#define MAP_ATKINS_TOWN_HOUSE_1                     (23 | (13 << 8))
+#define MAP_ATKINS_TOWN_HOUSE_2                     (24 | (13 << 8))
+#define MAP_ATKINS_TOWN_HOUSE_3                     (25 | (13 << 8))
 
 // gMapGroup_IndoorMossdeep
 #define MAP_MOSSDEEP_CITY_GYM               (0 | (14 << 8))

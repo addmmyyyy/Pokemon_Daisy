@@ -65,6 +65,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 	Script_TusaTown_PlayerHouse_OpeningCutscene_1::
 		lock
 		msgbox Text_MomCallsYouOver, MSGBOX_NPC
+		closemessage
 		applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable1
 		waitmovement 0
 		goto Script_TusaTown_PlayerHouse_OpeningCutscene
@@ -73,6 +74,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 	Script_TusaTown_PlayerHouse_OpeningCutscene_2::
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
+			closemessage
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable2
 			waitmovement 0
 			goto Script_TusaTown_PlayerHouse_OpeningCutscene
@@ -81,6 +83,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 	Script_TusaTown_PlayerHouse_OpeningCutscene_3::
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
+			closemessage
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable3
 			waitmovement 0
 			goto Script_TusaTown_PlayerHouse_OpeningCutscene
@@ -89,6 +92,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 	Script_TusaTown_PlayerHouse_OpeningCutscene_4::
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
+			closemessage
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable4
 			waitmovement 0
 			goto Script_TusaTown_PlayerHouse_OpeningCutscene
@@ -97,6 +101,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 	Script_TusaTown_PlayerHouse_OpeningCutscene_5::
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
+			closemessage
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable5
 			waitmovement 0
 			goto Script_TusaTown_PlayerHouse_OpeningCutscene
@@ -105,6 +110,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 	Script_TusaTown_PlayerHouse_OpeningCutscene_6::
 			lock
 			msgbox Text_MomCallsYouOver, MSGBOX_DEFAULT
+			closemessage
 			applymovement OBJ_EVENT_ID_PLAYER, TusaTown_PlayerHouse_PlayerToTable6
 			waitmovement 0
 			goto Script_TusaTown_PlayerHouse_OpeningCutscene
@@ -301,3 +307,31 @@ IndoorTusa_PlayerHouse_MapScripts::
 				walk_right
 				walk_right
 			step_end
+
+TusaTown_PlayerHouse_InteractCarraig::
+	msgbox Text_InteractCarraig MSGBOX_NPC
+	end
+
+TusaTown_PlayerHouse_InteractMom::
+	goto_if_set VAR_OPENING_SCENE_COMPLETE, TusaTown_PlayerHouse_DuringCutscene
+	goto TusaTown_PlayerHouse_InteractMom_AfterCutscene
+	end
+
+TusaTown_PlayerHouse_DuringCutscene::
+		msgbox Text_InteractMom_DuringCutscene MSGBOX_NPC
+		end
+
+TusaTown_PlayerHouse_InteractMom_AfterCutscene::
+		msgbox Text_InteractMom_AfterCutscene MSGBOX_NPC
+		end
+
+Text_InteractCarraig:
+	.string "No rush on choosing, \n"
+	.string "{PLAYER} $"
+
+Text_InteractMom_DuringCutscene:
+	.string "Go on {PLAYER}, \n"
+	.string "this is a great opportunity. $"
+
+Text_InteractMom_AfterCutscene:
+	.string "Have fun on your adventure, {PLAYER}. $"

@@ -34,6 +34,27 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE_13",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_TUSA_TOWN_HOUSE_2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_TUSA_TOWN_HOUSE_3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_TUSA_TOWN_HOUSE_1",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -111,7 +111,10 @@
     "LittlerootTown_BrendansHouse_2F",
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab"
+    "LittlerootTown_ProfessorBirchsLab",
+    "TusaTown_House_1",
+    "TusaTown_House_2",
+    "TusaTown_House_3"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
@@ -215,7 +218,8 @@
     "CleartideHouse_3",
     "Cleartide_Battle_Restaurant",
     "Cleartide_Museum_3",
-    "Cleartide_Museum_4"
+    "Cleartide_Museum_4",
+    "NewMap2"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",
@@ -281,7 +285,10 @@
     "LilycoveCity_DepartmentStore_4F",
     "LilycoveCity_DepartmentStore_5F",
     "LilycoveCity_DepartmentStoreRooftop",
-    "LilycoveCity_DepartmentStoreElevator"
+    "LilycoveCity_DepartmentStoreElevator",
+    "AtkinsTown_House_1",
+    "AtkinsTown_House_2",
+    "AtkinsTown_House_3"
   ],
   "gMapGroup_IndoorMossdeep": [
     "MossdeepCity_Gym",
