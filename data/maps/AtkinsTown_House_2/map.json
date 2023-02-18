@@ -2,7 +2,7 @@
   "id": "MAP_ATKINS_TOWN_HOUSE_2",
   "name": "AtkinsTown_House_2",
   "layout": "LAYOUT_ATKINS_TOWN_HOUSE_2",
-  "music": "MUS_LILYCOVE",
+  "music": "MUS_OLDALE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AtkinsHouse_EventScript_Woman",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AtkinsHouse_EventScript_Man2",
       "flag": "0"
     }
   ],
@@ -46,14 +46,14 @@
       "x": 2,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_ATKINS_TOWN_HOUSE_2",
+      "dest_map": "MAP_ATKINS_TOWN",
       "dest_warp_id": "4"
     },
     {
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_ATKINS_TOWN_HOUSE_2",
+      "dest_map": "MAP_ATKINS_TOWN",
       "dest_warp_id": "4"
     }
   ],

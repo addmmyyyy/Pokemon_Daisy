@@ -281,6 +281,7 @@ extern const u8 BattleScript_SelectingNotAllowedMoveAssaultVestInPalace[];
 extern const u8 BattleScript_SelectingNotAllowedPlaceholder[];
 extern const u8 BattleScript_SelectingNotAllowedPlaceholderInPalace[];
 extern const u8 BattleScript_SelectingNotAllowedMoveGravity[];
+extern const u8 BattleScript_EffectGravity2[];
 extern const u8 BattleScript_MoveUsedGravityPrevents[];
 extern const u8 BattleScript_SelectingNotAllowedMoveGravityInPalace[];
 extern const u8 BattleScript_SelectingNotAllowedMoveHealBlock[];

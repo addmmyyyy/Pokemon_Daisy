@@ -1,5 +1,5 @@
 Route102_EventScript_ItemPotion::
-	finditem ITEM_POTION
+	finditem ITEM_SOFT_SAND
 	end
 
 Route103_EventScript_ItemGuardSpec::
@@ -23,7 +23,7 @@ Route104_EventScript_ItemXAccuracy::
 	end
 
 Route104_EventScript_ItemPotion::
-	finditem ITEM_POTION
+	finditem ITEM_EXPERT_BELT
 	end
 
 Route105_EventScript_ItemIron::

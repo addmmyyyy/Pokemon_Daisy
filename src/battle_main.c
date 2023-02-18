@@ -4502,6 +4502,8 @@ u32 GetBattlerTotalSpeedStat(u8 battlerId)
         speed = (speed * 150) / 100;
     else if (ability == ABILITY_SURGE_SURFER && gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
         speed *= 2;
+    else if (ability == ABILITY_MIST_MARCHER && gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
+        speed *= 2;
     else if (ability == ABILITY_SLOW_START && gDisableStructs[battlerId].slowStartTimer != 0)
         speed /= 2;
 
@@ -4563,13 +4565,15 @@ s8 GetMovePriority(u32 battlerId, u16 move)
     u16 ability = GetBattlerAbility(battlerId);
 
     priority = gBattleMoves[move].priority;
-    if (ability == ABILITY_GALE_WINGS
-    #if B_GALE_WINGS >= GEN_7
-        && BATTLER_MAX_HP(battlerId)
-    #endif
-        && gBattleMoves[move].type == TYPE_FLYING)
+    if (ability == ABILITY_GALE_WINGS && gBattleMoves[move].type == TYPE_FLYING)
     {
         priority++;
+    }
+    else if (ability == ABILITY_QUICK_WITS && gBattleMoves[move].type == TYPE_DARK)
+    {
+      {
+          priority++;
+      }
     }
     else if (ability == ABILITY_PRANKSTER && IS_MOVE_STATUS(move))
     {

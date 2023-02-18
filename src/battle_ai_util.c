@@ -956,6 +956,37 @@ u8 GetMoveDamageResult(u16 move)
     return AI_THINKING_STRUCT->funcResult;
 }
 
+u8 CalculateDamageForScore(u16 move, u8 battlerAtk, u8 battlerDef)
+{
+  s32 i, checkedMove, bestId, currId, hp;
+  s32 moveDmgs[MAX_MON_MOVES];
+  u8 result;
+
+  for (i = 0; sIgnoredPowerfulMoveEffects[i] != IGNORED_MOVES_END; i++)
+  {
+      if (gBattleMoves[move].effect == sIgnoredPowerfulMoveEffects[i])
+          break;
+  }
+
+  if (gBattleMoves[move].power != 0 && sIgnoredPowerfulMoveEffects[i] == IGNORED_MOVES_END)
+  {
+    int dmg = AI_DATA->simulatedDmg[battlerAtk][battlerDef][i];
+    if (dmg >= gBattleMons[battlerAtk].hp) {
+      if(0){return 101;}
+      if(0){return 103;}
+      if(GetMovePriority(battlerAtk, move) > 0){return 104;}
+      return 102;
+    }
+    else {
+      dmg = ((dmg * 100) / gBattleMons[battlerDef].maxHP);
+      return dmg;
+    }
+  }
+  else{
+    return 0;
+  }
+}
+
 u32 GetCurrDamageHpPercent(u8 battlerAtk, u8 battlerDef)
 {
     int bestDmg = AI_DATA->simulatedDmg[battlerAtk][battlerDef][AI_THINKING_STRUCT->movesetIndex];
@@ -1166,7 +1197,7 @@ s32 AI_GetAbility(u32 battlerId)
     // We've had ability overwritten by e.g. Worry Seed. It is not part of AI_PARTY in case of switching
     if (gBattleStruct->overwrittenAbilities[battlerId])
         return gBattleStruct->overwrittenAbilities[battlerId];
-    
+
     // The AI knows its own ability.
     if (IsBattlerAIControlled(battlerId))
         return knownAbility;

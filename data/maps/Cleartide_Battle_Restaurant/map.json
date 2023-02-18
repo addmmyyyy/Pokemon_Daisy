@@ -2,7 +2,7 @@
   "id": "MAP_CLEARTIDE_BATTLE_RESTAURANT",
   "name": "Cleartide_Battle_Restaurant",
   "layout": "LAYOUT_CLEARTIDE_BATTLE_RESTAURANT",
-  "music": "MUS_SLATEPORT",
+  "music": "MUS_B_ARENA",
   "region_map_section": "MAPSEC_SLATEPORT_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -93,7 +93,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
       "x": 1,
       "y": 2,
       "elevation": -1,
@@ -103,27 +103,51 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Multichoice2_Demo",
-      "flag": "0"
+      "flag": "FLAG_HIDE_HIYORI"
     }
   ],
   "warp_events": [
-    {
-      "x": 0,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_CLEARCURRENT_CITY",
-      "dest_warp_id": "0"
-    },
     {
       "x": 1,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_CLEARCURRENT_CITY",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_CLEARCURRENT_CITY",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_CLEARTIDE_BATTLE_RESTAURANT_BACKROOM",
       "dest_warp_id": "0"
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "CleartideBattleRestaurant_EventScript_EntranceRight"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "CleartideBattleRestaurant_EventScript_EntranceLeft"
+    }
   ],
   "bg_events": [
 

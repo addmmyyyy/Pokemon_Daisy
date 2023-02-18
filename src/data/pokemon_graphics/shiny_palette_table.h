@@ -696,6 +696,7 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[] =
     SPECIES_SHINY_PAL(BINACLE, gMonShinyPalette_Binacle),
     SPECIES_SHINY_PAL(BARBARACLE, gMonShinyPalette_Barbaracle),
     SPECIES_SHINY_PAL(SKRELP, gMonShinyPalette_Skrelp),
+    SPECIES_SHINY_PAL(BEOLGIN, gMonShinyPalette_Beolgin),
     SPECIES_SHINY_PAL(DRAGALGE, gMonShinyPalette_Dragalge),
     SPECIES_SHINY_PAL(CLAUNCHER, gMonShinyPalette_Clauncher),
     SPECIES_SHINY_PAL(CLAWITZER, gMonShinyPalette_Clawitzer),
@@ -864,6 +865,8 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[] =
     SPECIES_SHINY_PAL(CLOBBOPUS, gMonShinyPalette_Clobbopus),
     SPECIES_SHINY_PAL(GRAPPLOCT, gMonShinyPalette_Grapploct),
     SPECIES_SHINY_PAL(SINISTEA, gMonShinyPalette_Sinistea),
+    SPECIES_SHINY_PAL(PUCANTAE, gMonShinyPalette_Pucantae),
+
     SPECIES_SHINY_PAL(POLTEAGEIST, gMonShinyPalette_Polteageist),
     SPECIES_SHINY_PAL(HATENNA, gMonShinyPalette_Hatenna),
     SPECIES_SHINY_PAL(HATTREM, gMonShinyPalette_Hattrem),
@@ -1328,7 +1331,7 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[] =
 
     SPECIES_SHINY_PAL(CALYREX_ICE_RIDER, gMonShinyPalette_CalyrexIceRider),
     SPECIES_SHINY_PAL(CALYREX_SHADOW_RIDER, gMonShinyPalette_CalyrexShadowRider),
-    
+
     SPECIES_SHINY_PAL(ENAMORUS_THERIAN, gMonShinyPalette_CircledQuestionMark), //gMonShinyPalette_EnamorusTherian),
 #endif
     SPECIES_SHINY_PAL(EGG, gMonPalette_Egg),

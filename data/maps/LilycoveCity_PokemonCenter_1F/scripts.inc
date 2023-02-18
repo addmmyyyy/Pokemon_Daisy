@@ -6,7 +6,7 @@ LilycoveCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 LilycoveCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_LILYCOVE_CITY
+	setrespawn HEAL_LOCATION_ATKINS_TOWN
 	goto LilycoveCity_PokemonCenter_1F_EventScript_SetLilycoveLadyGfx
 	end
 
@@ -40,29 +40,25 @@ LilycoveCity_PokemonCenter_1F_EventScript_Boy::
 LilycoveCity_PokemonCenter_1F_EventScript_Maniac::
 	lock
 	faceplayer
-	goto_if_set FLAG_BADGE07_GET, LilycoveCity_PokemonCenter_1F_EventScript_ManiacBadTeamGone
 	msgbox LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels, MSGBOX_DEFAULT
 	release
 	end
 
 LilycoveCity_PokemonCenter_1F_EventScript_ManiacBadTeamGone::
-	msgbox LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels, MSGBOX_DEFAULT
-	release
+	
 	end
 
 LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon:
-	.string "I wonder how many kinds of POKéMON\n"
-	.string "there are in the world.\p"
-	.string "It'd be great to cross seas and\n"
-	.string "trade POKéMON with people far away.$"
+	.string "All the people here are too\n"
+	.string "quick to judge Pokémon.\p"
+	.string "When I was a young lass I caught\n"
+	.string "a rowdy Sewaddle that was stealing\l"
+	.string "from the garden.\p"
+	.string "Now I while away my evenings at\n"
+	.string "home with Leavanny, knitting \l"
+	.string "coats for the Sudowoodos, hohoho.$"
 
 LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels:
-	.string "I've been hearing about some rotten\n"
-	.string "scoundrels who steal POKéMON and rip\l"
-	.string "off METEORITES.$"
-
-LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels:
-	.string "Those rotten scoundrels who steal\n"
-	.string "POKéMON and rip off METEORITES…\p"
-	.string "I haven't seen them around recently.$"
-
+	.string "Apparently in other regions Litten\n"
+	.string "are highly prized Pokémon. Here they're\l"
+	.string "just a forest fire waiting to happen.$"

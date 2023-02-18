@@ -6,8 +6,7 @@ OldaleTown_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_Mart_ExpandedItems
-	pokemart OldaleTown_Mart_Pokemart_Basic
+	goto OldaleTown_Mart_ExpandedItems
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
@@ -42,8 +41,8 @@ OldaleTown_Mart_Pokemart_Expanded:
 OldaleTown_Mart_EventScript_Woman::
 	lock
 	faceplayer
-	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_Mart_EventScript_PokeBallsInStock
-	msgbox OldaleTown_Mart_Text_PokeBallsAreSoldOut, MSGBOX_DEFAULT
+	msgbox OldaleTown_Mart_Text_ImGoingToBuyPokeBalls, MSGBOX_DEFAULT
+	closemessage
 	release
 	end
 
@@ -61,12 +60,14 @@ OldaleTown_Mart_Text_PokeBallsAreSoldOut:
 	.string "I can't buy any POKé BALLS.$"
 
 OldaleTown_Mart_Text_ImGoingToBuyPokeBalls:
-	.string "I'm going to buy a bunch of POKé BALLS\n"
-	.string "and catch a bunch of POKéMON!$"
+	.string "Sometimes I wish this mart was \n"
+	.string "closer to the town centre, but \l"
+	.string "that wouldn't be fair to those \l"
+	.string "living further out, would it? $"
 
-OldaleTown_Mart_Text_RestoreHPWithPotion:
-	.string "If a POKéMON gets hurt and loses its HP\n"
-	.string "and faints, it won't be able to battle.\p"
-	.string "To prevent your POKéMON from fainting,\n"
-	.string "restore its HP with a POTION.$"
-
+	OldaleTown_Mart_Text_RestoreHPWithPotion:
+		.string "My Linoone is such an eejit. We'll \n"
+		.string "walk all the way here to buy POTIONs\l"
+		.string "and on the way back he'll get\l"
+		.string "himself into a fight, and I'll have\l"
+		.string "to use them all to heal him!$"

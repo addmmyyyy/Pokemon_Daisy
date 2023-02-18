@@ -61,6 +61,7 @@ static s16 AI_Roaming(u8 battlerAtk, u8 battlerDef, u16 move, s16 score);
 static s16 AI_Safari(u8 battlerAtk, u8 battlerDef, u16 move, s16 score);
 static s16 AI_FirstBattle(u8 battlerAtk, u8 battlerDef, u16 move, s16 score);
 static s16 AI_DoubleBattle(u8 battlerAtk, u8 battlerDef, u16 move, s16 score);
+static s16 AI_Fionn(u8 battlerAtk, u8 battlerDef, u16 move, s16 score);
 
 static s16 (*const sBattleAiFuncTable[])(u8, u8, u16, s16) =
 {
@@ -81,7 +82,7 @@ static s16 (*const sBattleAiFuncTable[])(u8, u8, u16, s16) =
     [14] = NULL,                     // Unused
     [15] = NULL,                     // Unused
     [16] = NULL,                     // Unused
-    [17] = NULL,                     // Unused
+    [17] = AI_Fionn,                 // AI_FLAG_FIONN
     [18] = NULL,                     // Unused
     [19] = NULL,                     // Unused
     [20] = NULL,                     // Unused
@@ -4994,6 +4995,18 @@ static s16 AI_PreferBatonPass(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
     return score;
 }
 
+static s16 AI_Fionn(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
+{
+  if (IS_MOVE_PHYSICAL(move) || IS_MOVE_SPECIAL(move)) {
+    score = CalculateDamageForScore(move, battlerAtk, battlerDef);
+  }
+
+  if (IS_MOVE_STATUS(move)) {
+    return srand(time(NULL));
+  }
+  return score;
+}
+
 static s16 AI_HPAware(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
 {
     u16 effect = gBattleMoves[move].effect;
@@ -5194,6 +5207,7 @@ static void AI_Watch(void)
 {
     AI_THINKING_STRUCT->aiAction |= (AI_ACTION_DONE | AI_ACTION_WATCH | AI_ACTION_DO_NOT_ATTACK);
 }
+
 
 // Roaming pokemon logic
 static s16 AI_Roaming(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)

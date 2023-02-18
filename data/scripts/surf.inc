@@ -8,7 +8,35 @@ EventScript_UseSurf::
 	goto_if_eq VAR_RESULT, NO, EventScript_ReleaseUseSurf
 	msgbox gText_PlayerUsedSurf, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_SURF
+
 EventScript_ReleaseUseSurf::
 	releaseall
 EventScript_EndUseSurf::
 	end
+
+EventScript_UseSurfSpecial::
+		lockall
+		msgbox gText_WantToUseSurf, MSGBOX_YESNO
+		goto_if_eq VAR_RESULT, NO, EventScript_ReleaseUseSurf
+		msgbox gText_PlayerUsedSurf, MSGBOX_DEFAULT
+		dofieldeffect FLDEFF_USE_SURF_SPECIAL
+		delay 600
+		applymovement OBJ_EVENT_ID_PLAYER Player_Forward
+		end
+
+Player_Forward:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end

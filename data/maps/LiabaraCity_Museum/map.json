@@ -2,7 +2,7 @@
   "id": "MAP_LIABARA_CITY_MUSEUM",
   "name": "LiabaraCity_Museum",
   "layout": "LAYOUT_LIABARA_CITY_MUSEUM",
-  "music": "MUS_PETALBURG",
+  "music": "MUS_FALLARBOR",
   "region_map_section": "MAPSEC_SLATEPORT_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

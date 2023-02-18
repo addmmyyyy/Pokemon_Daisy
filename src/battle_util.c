@@ -3898,7 +3898,7 @@ u8 AtkCanceller_UnableToUseMove(void)
                     party = gPlayerParty;
                 else
                     party = gEnemyParty;
-                
+
                 for (i = 0; i < PARTY_SIZE; i++)
                 {
                     if (GetMonData(&party[i], MON_DATA_HP)
@@ -4699,16 +4699,32 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 effect++;
             }
             break;
-        case ABILITY_DRIZZLE:
-            if (TryChangeBattleWeather(battler, ENUM_WEATHER_RAIN, TRUE))
+
+          case ABILITY_DRIZZLE:
+                if (TryChangeBattleWeather(battler, ENUM_WEATHER_RAIN, TRUE))
+                {
+                    BattleScriptPushCursorAndCallback(BattleScript_DrizzleActivates);
+                    effect++;
+                }
+                else if (gBattleWeather & B_WEATHER_PRIMAL_ANY && WEATHER_HAS_EFFECT && !gSpecialStatuses[battler].switchInAbilityDone)
+                {
+                    gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                    BattleScriptPushCursorAndCallback(BattleScript_BlockedByPrimalWeatherEnd3);
+                    effect++;
+                }
+                break;
+        case ABILITY_PLANETARY:
+            if (!(gFieldStatuses & STATUS_FIELD_GRAVITY))
             {
-                BattleScriptPushCursorAndCallback(BattleScript_DrizzleActivates);
+                gFieldStatuses |= STATUS_FIELD_GRAVITY;
+                gFieldTimers.gravityTimer = 5;
+                gBattlescriptCurrInstr += 5;
+                BattleScriptPushCursorAndCallback(BattleScript_EffectGravity2);
                 effect++;
             }
-            else if (gBattleWeather & B_WEATHER_PRIMAL_ANY && WEATHER_HAS_EFFECT && !gSpecialStatuses[battler].switchInAbilityDone)
+            else if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                BattleScriptPushCursorAndCallback(BattleScript_BlockedByPrimalWeatherEnd3);
                 effect++;
             }
             break;
@@ -6672,7 +6688,7 @@ static u8 ItemEffectMoveEnd(u32 battlerId, u16 holdEffect)
 {
     u8 effect = 0;
     u32 i;
-    
+
     switch (holdEffect)
     {
 #if B_HP_BERRIES >= GEN_4
@@ -6841,7 +6857,7 @@ static u8 ItemEffectMoveEnd(u32 battlerId, u16 holdEffect)
             && !(gBattleMons[battlerId].status2 & STATUS2_FOCUS_ENERGY)
             && HasEnoughHpToEatBerry(battlerId, GetBattlerItemHoldEffectParam(battlerId, gLastUsedItem), gLastUsedItem))
         {
-            gBattleMons[battlerId].status2 |= STATUS2_FOCUS_ENERGY;            
+            gBattleMons[battlerId].status2 |= STATUS2_FOCUS_ENERGY;
             gBattleScripting.battler = battlerId;
             gPotentialItemEffectBattler = battlerId;
             BattleScriptPushCursor();
@@ -6850,7 +6866,7 @@ static u8 ItemEffectMoveEnd(u32 battlerId, u16 holdEffect)
         }
         break;
     }
-    
+
     return effect;
 }
 
@@ -6867,7 +6883,7 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
         gLastUsedItem = gBattleMons[battlerId].item;
         battlerHoldEffect = GetBattlerHoldEffect(battlerId, TRUE);
     }
-    
+
     atkItem = gBattleMons[gBattlerAttacker].item;
     atkHoldEffect = GetBattlerHoldEffect(gBattlerAttacker, TRUE);
     atkHoldEffectParam = GetBattlerHoldEffectParam(gBattlerAttacker);
@@ -7986,7 +8002,7 @@ u32 GetBattlerHoldEffect(u8 battlerId, bool32 checkNegating)
         return ItemId_GetHoldEffect(gBattleMons[battlerId].item);
 }
 
-// 
+//
 static u32 GetBattlerItemHoldEffectParam(u8 battlerId, u16 item)
 {
     if (item == ITEM_ENIGMA_BERRY)
@@ -8943,8 +8959,11 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
     switch (GetBattlerAbility(battlerAtk))
     {
     case ABILITY_HUGE_POWER:
+    if (IS_MOVE_PHYSICAL(move))
+        MulModifier(&modifier, UQ_4_12(2.0));
+    break;
     case ABILITY_PURE_POWER:
-        if (IS_MOVE_PHYSICAL(move))
+        if (IS_MOVE_SPECIAL(move))
             MulModifier(&modifier, UQ_4_12(2.0));
         break;
     case ABILITY_SLOW_START:

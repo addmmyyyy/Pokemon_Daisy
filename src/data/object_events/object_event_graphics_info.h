@@ -4655,7 +4655,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wooloo = {
     .tileTag = 0xFFFF,
-    .paletteTag = OBJ_EVENT_PAL_TAG_HO_OH,
+    .paletteTag = OBJ_EVENT_PAL_WOOLOO,
     .size = 512,
     .width = 16,
     .height = 16,

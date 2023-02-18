@@ -518,7 +518,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_DARKRAI]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_SHAYMIN]                      = { .size = MON_COORDS_SIZE(56, 40), .y_offset = 15 },
     [SPECIES_ARCEUS]                       = ARCEUS_BACK_PIC_COORDS,
-#endif 
+#endif
 #if P_GEN_5_POKEMON == TRUE
     [SPECIES_VICTINI]                      = { .size = MON_COORDS_SIZE(40, 64), .y_offset =  7 },
     [SPECIES_SNIVY]                        = { .size = MON_COORDS_SIZE(56, 48), .y_offset = 11 },
@@ -719,6 +719,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_BINACLE]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  5 },
     [SPECIES_BARBARACLE]                   = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_SKRELP]                       = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  5 },
+    [SPECIES_BEOLGIN]                       = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  5 },
     [SPECIES_DRAGALGE]                     = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_CLAUNCHER]                    = { .size = MON_COORDS_SIZE(64, 48), .y_offset = 11 },
     [SPECIES_CLAWITZER]                    = { .size = MON_COORDS_SIZE(64, 48), .y_offset = 11 },
@@ -887,6 +888,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_CLOBBOPUS]                    = { .size = MON_COORDS_SIZE(64, 40), .y_offset = 14 },
     [SPECIES_GRAPPLOCT]                    = { .size = MON_COORDS_SIZE(56, 56), .y_offset =  5 },
     [SPECIES_SINISTEA]                     = { .size = MON_COORDS_SIZE(48, 32), .y_offset = 16 },
+    [SPECIES_PUCANTAE]                     = { .size = MON_COORDS_SIZE(48, 32), .y_offset = 1,},
     [SPECIES_POLTEAGEIST]                  = { .size = MON_COORDS_SIZE(64, 40), .y_offset = 13 },
     [SPECIES_HATENNA]                      = { .size = MON_COORDS_SIZE(40, 40), .y_offset = 12 },
     [SPECIES_HATTREM]                      = { .size = MON_COORDS_SIZE(56, 48), .y_offset =  8 },

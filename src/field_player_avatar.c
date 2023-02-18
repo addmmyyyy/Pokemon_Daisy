@@ -140,6 +140,12 @@ static u8 Fishing_PutRodAway(struct Task *);
 static u8 Fishing_EndNoMon(struct Task *);
 static void AlignFishingAnimationFrames(void);
 
+static void Task_WaitStopSurfing(u8 taskId);
+static void CreateStartSurfingTask(u8);
+static void Task_StartSurfingInit(u8 taskId);
+static void Task_WaitStartSurfing(u8 taskId);
+static bool8 CanStopSurfing(s16, s16, u8);
+
 static u8 TrySpinPlayerForWarp(struct ObjectEvent *, s16 *);
 
 static bool8 (*const sForcedMovementTestFuncs[NUM_FORCED_MOVEMENTS])(u8) =
@@ -674,6 +680,7 @@ u8 CheckForObjectEventCollision(struct ObjectEvent *objectEvent, s16 x, s16 y, u
     u8 collision = GetCollisionAtCoords(objectEvent, x, y, direction);
     if (collision == COLLISION_ELEVATION_MISMATCH && CanStopSurfing(x, y, direction))
         return COLLISION_STOP_SURFING;
+
 
     if (ShouldJumpLedge(x, y, direction))
     {

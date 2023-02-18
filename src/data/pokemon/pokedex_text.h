@@ -4149,6 +4149,12 @@ const u8 gSkrelpPokedexText[] = _(
     "evolution. They spray liquid poison on\n"
     "prey that approach unawares.");
 
+
+const u8 gBeolginPokedexText[] = _(
+    "Skrelp from Kalos that drift \n"
+    "into Eireann waters are purified\n"
+    "of their poisonous biology.");
+
 const u8 gDragalgePokedexText[] = _(
     "Their poison is strong enough to eat\n"
     "through the hull of a tanker. Tales are\n"
@@ -5113,6 +5119,11 @@ const u8 gSinisteaPokedexText[] = _(
     "This Pokémon is said to have been born\n"
     "when a lonely spirit possessed a cold,\n"
     "leftover cup of tea.");
+
+const u8 gPucantaePokedexText[] = _(
+        "Similar to the Galarian Sinistea\n"
+        "although its tea-like ectoplasm\n"
+        "has a certain electrifying property");
 
 const u8 gPolteageistPokedexText[] = _(
     "This species lives in antique teapots.\n"

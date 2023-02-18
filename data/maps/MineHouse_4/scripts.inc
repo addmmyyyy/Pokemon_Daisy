@@ -3,11 +3,11 @@ MineHouse_4_MapScripts::
 
 LiabaraHouse_EventScript_Hiker1::
 	applymovement 2 LiabaraHouse_Spin
-	waitmovement
+
 	faceplayer
 	msgbox LiabaraHouse_Text_Hiker1 MSGBOX_NPC
 	applymovement 2 LiabaraHouse_Spin
-	waitmovement
+
 	faceplayer
 	end
 
@@ -19,11 +19,12 @@ LiabaraHouse_Text_Hiker1:
 
 LiabaraHouse_EventScript_Hiker2::
 	applymovement 1 LiabaraHouse_Spin
-	waitmovement
+
 	faceplayer
 	msgbox LiabaraHouse_Text_Hiker2 MSGBOX_NPC
+
 	applymovement 1 LiabaraHouse_Spin
-	waitmovement
+
 	faceplayer
 	end
 

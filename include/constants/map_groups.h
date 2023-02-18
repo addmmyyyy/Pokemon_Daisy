@@ -74,6 +74,7 @@
 #define MAP_ROUTE_5               (65 | (0 << 8))
 #define MAP_ROUTE_2_CAVE          (66 | (0 << 8))
 #define MAP_ROUTE_4               (67 | (0 << 8))
+#define MAP_ROUTE1                (68 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -189,6 +190,7 @@
 #define MAP_CLEARTIDE_MUSEUM_3                     (24 | (9 << 8))
 #define MAP_CLEARTIDE_MUSEUM_4                     (25 | (9 << 8))
 #define MAP_NEW_MAP2                               (26 | (9 << 8))
+#define MAP_CLEARTIDE_BATTLE_RESTAURANT_BACKROOM   (27 | (9 << 8))
 
 // gMapGroup_IndoorMauville
 #define MAP_MAUVILLE_CITY_GYM               (0 | (10 << 8))
@@ -447,6 +449,7 @@
 #define MAP_JOYCES_DUNGEON_BACK                      (109 | (24 << 8))
 #define MAP_ATKINS_FOREST                            (110 | (24 << 8))
 #define MAP_ATKINS_LAKE                              (111 | (24 << 8))
+#define MAP_TUSA_CLIFF                               (112 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

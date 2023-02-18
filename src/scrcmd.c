@@ -591,6 +591,8 @@ bool8 ScrCmd_clearflag(struct ScriptContext *ctx)
     return FALSE;
 }
 
+
+
 bool8 ScrCmd_checkflag(struct ScriptContext *ctx)
 {
     ctx->comparisonResult = FlagGet(ScriptReadHalfword(ctx));
@@ -1692,6 +1694,8 @@ bool8 ScrCmd_givemon(struct ScriptContext *ctx)
     return FALSE;
 }
 
+
+
 bool8 ScrCmd_giveegg(struct ScriptContext *ctx)
 {
     u16 species = VarGet(ScriptReadHalfword(ctx));
@@ -1858,6 +1862,7 @@ bool8 ScrCmd_settrainerflag(struct ScriptContext *ctx)
     SetTrainerFlag(index);
     return FALSE;
 }
+
 
 bool8 ScrCmd_cleartrainerflag(struct ScriptContext *ctx)
 {

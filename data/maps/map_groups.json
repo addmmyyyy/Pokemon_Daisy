@@ -104,7 +104,8 @@
     "Route2",
     "Route_5",
     "Route_2_Cave",
-    "Route_4"
+    "Route_4",
+    "Route1"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -219,7 +220,8 @@
     "Cleartide_Battle_Restaurant",
     "Cleartide_Museum_3",
     "Cleartide_Museum_4",
-    "NewMap2"
+    "NewMap2",
+    "Cleartide_Battle_Restaurant_Backroom"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",
@@ -477,7 +479,8 @@
     "Joyces_Dungeon_Main",
     "Joyces_Dungeon_Back",
     "AtkinsForest",
-    "Atkins_Lake"
+    "Atkins_Lake",
+    "TusaCliff"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -6,7 +6,7 @@ SlateportCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 SlateportCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_SLATEPORT_CITY
+	setrespawn HEAL_LOCATION_CLEARCURRENT_CITY
 	call Common_EventScript_UpdateBrineyLocation
 	end
 
@@ -39,4 +39,3 @@ SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend:
 	.string "I trade POKéMON with my friends.\p"
 	.string "If a traded POKéMON is holding an\n"
 	.string "item, it makes me twice as happy!$"
-

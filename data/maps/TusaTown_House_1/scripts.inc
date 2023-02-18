@@ -7,8 +7,8 @@ TusaHouse_EventScript_Sailor::
 
 TusaTown_Text_Sailor:
 	.string "Didn't expect to see \n"
-	.string "a Sailor up a mountain ay? \p"
+	.string "a Sailor up a mountain, aye? \p"
 	.string "BWAHAHA! \p"
 	.string "I'm actually on house exchange, \n"
-	.string "reaching new heights if you will \p"
+	.string "reaching new heights if you will. \p"
 	.string "BWAHAHAHA! $"

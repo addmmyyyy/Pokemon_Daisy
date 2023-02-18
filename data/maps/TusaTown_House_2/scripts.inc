@@ -2,25 +2,26 @@ TusaTown_House_2_MapScripts::
 	.byte 0
 
 TusaHouse_EventScript_OldWoman::
-	goto_if_set FLAG_RECEIVED_POTIONS, TusaHouse_EventScript_OldWomanGivesPotions
-	msgbox TusaHouse_Text_OldWoman
+	goto_if_unset FLAG_RECEIVED_POTIONS, TusaHouse_EventScript_OldWomanGivesPotions
+	msgbox TusaHouse_Text_OldWoman MSGBOX_NPC
 	end
 
 
 TusaHouse_Text_OldWoman:
-	.string "Good luck on your adventure, {PLAYER}."
+	.string "Good luck on your adventure, {PLAYER}. $"
 
 TusaHouse_EventScript_OldWomanGivesPotions::
 	msgbox TusaHouse_Text_OldWoman_2 MSGBOX_NPC
 	giveitem ITEM_POTION, 5
-	msgbox TusaHouse_Text_PlayerReceivedPotion MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_POTIONS
 	msgbox TusaHouse_Text_OldWoman_3 MSGBOX_NPC
+	end
 
 TusaHouse_Text_OldWoman_2:
 	.string "Oh {PLAYER}, how lovely \n"
 	.string "to see you. How are things? \p"
 	.string "Oh, the league challenge? \n"
-	.string " I actually have something \l"
+	.string "I actually have something \l"
 	.string "to help with that. $"
 
 TusaHouse_Text_OldWoman_3:

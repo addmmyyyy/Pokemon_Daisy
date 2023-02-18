@@ -1153,3 +1153,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TusaTown_House_2/scripts.inc"
 
 	.include "data/maps/TusaTown_House_3/scripts.inc"
+
+	.include "data/maps/Route1/scripts.inc"
+
+	.include "data/maps/Cleartide_Battle_Restaurant_Backroom/scripts.inc"
+
+	.include "data/maps/TusaCliff/scripts.inc"

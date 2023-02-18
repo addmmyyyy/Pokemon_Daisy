@@ -1042,6 +1042,12 @@ static const u8 sText_CantThrowPokeBall_SemiInvulnerable[] = _("Cannot throw a b
 static const u8 sText_CantThrowPokeBall_Disabled[] = _("POKé BALLS cannot be used\nright now!\p");
 void ItemUseInBattle_PokeBall(u8 taskId)
 {
+      if (FlagGet(FLAG_DISABLE_CATCHING))
+  {
+      static const u8 sText_BallsCannotBeUsed[] = _("Poké Balls cannot be used\nright now!\p");
+      DisplayItemMessage(taskId, FONT_NORMAL, sText_BallsCannotBeUsed, CloseItemMessage);
+  }
+  else {
     switch (GetBallThrowableState())
     {
     case BALL_THROW_ABLE:
@@ -1079,6 +1085,7 @@ void ItemUseInBattle_PokeBall(u8 taskId)
             DisplayItemMessageInBattlePyramid(taskId, sText_CantThrowPokeBall_Disabled, Task_CloseBattlePyramidBagMessage);
         break;
     }
+  }
 }
 
 static void Task_CloseStatIncreaseMessage(u8 taskId)

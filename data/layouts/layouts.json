@@ -718,7 +718,7 @@
       "height": 7,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Contest",
-      "border_filepath": "data/layouts/FallarborTown_LeftoverR\u0000\u0000\u0000\u0000testLobby/border.bin",
+      "border_filepath": "data/layouts/FallarborTown_LeftoverRSContestLobby/border.bin",
       "blockdata_filepath": "data/layouts/FallarborTown_LeftoverRSContestLobby/map.bin"
     },
     {
@@ -2728,7 +2728,7 @@
       "height": 6,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleFrontier",
-      "border_filepath": "data/layouts/LilycoveCity_Department\u0000\u0000\u0000\u0000eElevator/border.bin",
+      "border_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator/map.bin"
     },
     {
@@ -3338,7 +3338,7 @@
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleDome",
-      "border_filepath": "data/layouts/BattleFrontier_BattleDo\u0000\u0000\u0000\u0000eBattleRoom/border.bin",
+      "border_filepath": "data/layouts/BattleFrontier_BattleDomePreBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleDomePreBattleRoom/map.bin"
     },
     {
@@ -3438,7 +3438,7 @@
       "height": 10,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BattlePalace",
-      "border_filepath": "data/layouts/BattleFrontier_BattlePa\u0000\u0000\u0000\u0000BattleRoom/border.bin",
+      "border_filepath": "data/layouts/BattleFrontier_BattlePalaceBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattlePalaceBattleRoom/map.bin"
     },
     {
@@ -3468,7 +3468,7 @@
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleFactory",
-      "border_filepath": "data/layouts/BattleFrontier_BattleFa\u0000\u0000\u0000\u0000yPreBattleRoom/border.bin",
+      "border_filepath": "data/layouts/BattleFrontier_BattleFactoryPreBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleFactoryPreBattleRoom/map.bin"
     },
     {
@@ -4475,7 +4475,7 @@
       "id": "LAYOUT_ROUTE_13",
       "name": "Route_13_Layout",
       "width": 60,
-      "height": 30,
+      "height": 34,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route_13/border.bin",
@@ -4544,8 +4544,8 @@
     {
       "id": "LAYOUT_CLEARTIDE_GYM",
       "name": "Cleartide_Gym_Layout",
-      "width": 43,
-      "height": 40,
+      "width": 16,
+      "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_SootopolisGym",
       "border_filepath": "data/layouts/Cleartide_Gym/border.bin",
@@ -4555,7 +4555,7 @@
       "id": "LAYOUT_CLEARCURRENT_GYM_BATTLE_GROUND",
       "name": "ClearcurrentGym_BattleGround_Layout",
       "width": 10,
-      "height": 11,
+      "height": 13,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BattleTent",
       "border_filepath": "data/layouts/ClearcurrentGym_BattleGround/border.bin",
@@ -4880,6 +4880,36 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/TusaTown_House_3/border.bin",
       "blockdata_filepath": "data/layouts/TusaTown_House_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1",
+      "name": "Route1_Layout",
+      "width": 60,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route1/border.bin",
+      "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLEARTIDE_BATTLE_RESTAURANT_BACKROOM",
+      "name": "Cleartide_Battle_Restaurant_Backroom_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleArena",
+      "border_filepath": "data/layouts/Cleartide_Battle_Restaurant_Backroom/border.bin",
+      "blockdata_filepath": "data/layouts/Cleartide_Battle_Restaurant_Backroom/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUSA_CLIFF",
+      "name": "TusaCliff_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TusaCliff/border.bin",
+      "blockdata_filepath": "data/layouts/TusaCliff/map.bin"
     }
   ]
 }

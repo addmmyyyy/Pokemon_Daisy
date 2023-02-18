@@ -41,28 +41,28 @@
 #define FLAG_TEMP_1F     (TEMP_FLAGS_START + 0x1F)
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
+#define FLAG_JESSE_OUTSIDE_POYCES    0x20
+#define FLAG_SYS_IN_CLEARTIDE_GYM    0x21 // Unused Flag
+#define FLAG_BONSLY1_HIDDEN    0x22 // Unused Flag
+#define FLAG_BONSLY2_HIDDEN    0x23 // Unused Flag
+#define FLAG_SUDOWOODO_DEFEATED    0x24 // Unused Flag
+#define FLAG_CBR_ATTACK    0x25 // Unused Flag
+#define FLAG_CBR_DEFENSE    0x26 // Unused Flag
+#define FLAG_CBR_SPATK    0x27 // Unused Flag
+#define FLAG_CBR_SPDEF    0x28 // Unused Flag
+#define FLAG_CBR_HP    0x29 // Unused Flag
+#define FLAG_CBR_SPEED    0x2A // Unused Flag
+#define FLAG_EMOLGA_QUEST    0x2B // Unused Flag
+#define FLAG_EMOLGA_QUEST_FINISHED    0x2C // Unused Flag
+#define FLAG_VULPIX_QUEST    0x2D // Unused Flag
+#define FLAG_VULPIX_QUEST_FINISHED   0x2E // Unused Flag
+#define FLAG_HIDE_HIYORI    0x2F // Unused Flag
+#define FLAG_DISABLE_CATCHING    0x30 // Unused Flag
+#define FLAG_CLEARTIDE_GYM_GUIDE    0x31 // Unused Flag
+#define FLAG_GRAINNE_HIDE    0x32 // Unused Flag
+#define FLAG_GRAINNE_HIDE_MUSEUM    0x33 // Unused Flag
+#define FLAG_GRAINNE_LIKES    0x34 // Unused Flag
+#define FLAG_GRAINNE_ETHEL_CUTSCENE    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
@@ -651,11 +651,11 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_RECEIVED_ABRA_OR_MACHOP  0x264 // Unused Flag
+#define FLAG_RECEIVED_ABRA  0x264 // Unused Flag
 #define FLAG_RECEIVED_POTIONS  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
+#define FLAG_RECEIVED_MACHOP  0x266 // Unused Flag
+#define FLAG_BEOLGIN_QUEST  0x267 // Unused Flag
+#define FLAG_BEOLGIN_QUEST_FINISHED  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag

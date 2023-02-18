@@ -3989,7 +3989,7 @@ const u16 sLevelCapFlags[NUM_SOFT_CAPS] =
     FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
 };
 
-const u16 sLevelCaps[NUM_SOFT_CAPS] = { 10, 20, 30, 40, 50, 60, 70, 80 };
+const u16 sLevelCaps[NUM_SOFT_CAPS] = { 16, 24, 30, 40, 50, 60, 70, 80 };
 const double sLevelCapReduction[7] = { .5, .33, .25, .20, .15, .10, .05 };
 const double sRelativePartyScaling[27] =
 {
@@ -4050,9 +4050,10 @@ double GetPkmnExpMultiplier(u8 level)
             levelDiff = level - sLevelCaps[i];
             if (levelDiff > 6)
                 levelDiff = 6;
-            lvlCapMultiplier = sLevelCapReduction[levelDiff];
+            lvlCapMultiplier = 0;
             break;
         }
+
     }
 
     // multiply the usual exp yield by the party level multiplier
@@ -4065,7 +4066,7 @@ double GetPkmnExpMultiplier(u8 level)
 
     avgDiff += 14;
 
-    return lvlCapMultiplier * sRelativePartyScaling[avgDiff];
+    return lvlCapMultiplier * 1.5;
 }
 
 static void Cmd_getexp(void)

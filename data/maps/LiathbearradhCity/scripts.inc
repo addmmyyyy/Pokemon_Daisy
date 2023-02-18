@@ -1,6 +1,29 @@
 LiathbearradhCity_MapScripts::
 	.byte 0
 
+Liabara_EventScript_Azurill::
+	MSGBOX Liabara_Text_Azurill MSGBOX_NPC
+	end
+
+Liabara_Text_Azurill:
+	.string "Azuuuu$"
+
+	Liabara_EventScript_LittleGirl::
+		MSGBOX Liabara_Text_LittleGirl MSGBOX_NPC
+		end
+
+	Liabara_Text_LittleGirl:
+		.string "I love the park!$"
+
+		Liabara_EventScript_Lass::
+			MSGBOX Liabara_Text_Lass MSGBOX_NPC
+			end
+
+		Liabara_Text_Lass:
+			.string "I still don't fully get\n"
+			.string "how this counts as a city.$"
+
+
 Liabara_EventScript_GymSign::
 	msgbox LiabaraCity_Text_GymSign, MSGBOX_SIGN
 	end
@@ -61,7 +84,6 @@ LiabaraCity_Text_Maniac:
 
 	Liabara_EventScript_Artist::
 		msgbox LiabaraCity_Text_Artist, MSGBOX_SIGN
-		call Liabara_ProfessorBirchsLab_EventScript_ReceivePokedex
 		end
 
 Liabara_ProfessorBirchsLab_EventScript_ReceivePokedex::

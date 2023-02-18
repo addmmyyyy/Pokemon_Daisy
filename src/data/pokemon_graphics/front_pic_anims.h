@@ -6,6 +6,13 @@
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_PUCANTAE_1[] =
+{
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_BULBASAUR_1[] =
 {
     ANIMCMD_FRAME(0, 30),
@@ -8089,6 +8096,13 @@ static const union AnimCmd sAnim_SKRELP_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_BEOLGIN_1[] =
+{
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_DRAGALGE_1[] =
 {
     ANIMCMD_FRAME(1, 20),
@@ -14943,6 +14957,11 @@ static const union AnimCmd *const sAnims_SKRELP[] =
     sAnim_SKRELP_1,
 };
 
+static const union AnimCmd *const sAnims_BEOLGIN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_BEOLGIN_1,
+};
+
 static const union AnimCmd *const sAnims_DRAGALGE[] =
 {
     sAnim_GeneralFrame0,
@@ -15930,6 +15949,11 @@ static const union AnimCmd *const sAnims_SINISTEA[] =
 {
     sAnim_GeneralFrame0,
     sAnim_SINISTEA_1,
+};
+
+static const union AnimCmd *const sAnims_PUCANTAE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_PUCANTAE_1,
 };
 
 static const union AnimCmd *const sAnims_POLTEAGEIST[] =
@@ -17830,6 +17854,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(BINACLE),
     ANIM_CMD(BARBARACLE),
     ANIM_CMD(SKRELP),
+    ANIM_CMD(BEOLGIN),
     ANIM_CMD(DRAGALGE),
     ANIM_CMD(CLAUNCHER),
     ANIM_CMD(CLAWITZER),
@@ -17998,6 +18023,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(CLOBBOPUS),
     ANIM_CMD(GRAPPLOCT),
     ANIM_CMD(SINISTEA),
+    ANIM_CMD(PUCANTAE),
     ANIM_CMD(POLTEAGEIST),
     ANIM_CMD(HATENNA),
     ANIM_CMD(HATTREM),

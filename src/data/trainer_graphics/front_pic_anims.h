@@ -10,6 +10,10 @@ static const union AnimCmd *const sAnims_PokemonBreederF[] ={
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_LeaderCarraig[] ={
+    sAnim_GeneralFrame0,
+};
+
 static const union AnimCmd *const sAnims_CoolTrainerM[] ={
     sAnim_GeneralFrame0,
 };
@@ -379,6 +383,7 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_BIRD_KEEPER] = sAnims_BirdKeeper,
     [TRAINER_PIC_COLLECTOR] = sAnims_Collector,
     [TRAINER_PIC_AQUA_GRUNT_F] = sAnims_AquaGruntF,
+    [TRAINER_PIC_LEADER_CARRAIG] = sAnims_LeaderCarraig,
     [TRAINER_PIC_SWIMMER_M] = sAnims_SwimmerM,
     [TRAINER_PIC_MAGMA_GRUNT_M] = sAnims_MagmaGruntM,
     [TRAINER_PIC_EXPERT_M] = sAnims_ExpertM,

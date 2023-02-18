@@ -8297,6 +8297,18 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
+    [NATIONAL_DEX_BEOLGIN] =
+    {
+        .categoryName = _("Bladderwrack"),
+        .height = 5,
+        .weight = 73,
+        .description = gBeolginPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
     [NATIONAL_DEX_DRAGALGE] =
     {
         .categoryName = _("Mock Kelp"),
@@ -10263,6 +10275,18 @@ const struct PokedexEntry gPokedexEntries[] =
         .height = 1,
         .weight = 2,
         .description = gSinisteaPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_PUCANTAE] =
+    {
+        .categoryName = _("White Tea"),
+        .height = 1,
+        .weight = 2,
+        .description = gPucantaePokedexText,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

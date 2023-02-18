@@ -696,6 +696,8 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_BINACLE] = sBinacleLevelUpLearnset,
     [SPECIES_BARBARACLE] = sBarbaracleLevelUpLearnset,
     [SPECIES_SKRELP] = sSkrelpLevelUpLearnset,
+    [SPECIES_BEOLGIN] = sBeolginLevelUpLearnset,
+
     [SPECIES_DRAGALGE] = sDragalgeLevelUpLearnset,
     [SPECIES_CLAUNCHER] = sClauncherLevelUpLearnset,
     [SPECIES_CLAWITZER] = sClawitzerLevelUpLearnset,
@@ -864,6 +866,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_CLOBBOPUS] = sClobbopusLevelUpLearnset,
     [SPECIES_GRAPPLOCT] = sGrapploctLevelUpLearnset,
     [SPECIES_SINISTEA] = sSinisteaLevelUpLearnset,
+    [SPECIES_PUCANTAE] = sPucantaeLevelUpLearnset,
     [SPECIES_POLTEAGEIST] = sPolteageistLevelUpLearnset,
     [SPECIES_HATENNA] = sHatennaLevelUpLearnset,
     [SPECIES_HATTREM] = sHattremLevelUpLearnset,

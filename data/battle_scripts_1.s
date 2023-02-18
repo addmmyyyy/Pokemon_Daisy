@@ -1280,7 +1280,7 @@ BattleScript_BurnUpRemoveType::
 	printstring STRINGID_ATTACKERLOSTFIRETYPE
 	waitmessage B_WAIT_TIME_LONG
 	return
-	
+
 BattleScript_EffectPurify:
 	attackcanceler
 	attackstring
@@ -2832,6 +2832,15 @@ BattleScript_EffectMircleEye:
 	ppreduce
 	setmiracleeye BattleScript_ButItFailed
 	goto BattleScript_IdentifiedFoe
+
+
+	BattleScript_EffectGravity2::
+		pause B_WAIT_TIME_SHORT
+		call BattleScript_AbilityPopUp
+		printstring STRINGID_GRAVITYINTENSIFIED
+		waitstate
+		call BattleScript_WeatherFormChanges
+		end3
 
 BattleScript_EffectGravity:
 	attackcanceler

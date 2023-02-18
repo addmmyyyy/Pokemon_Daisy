@@ -4,12 +4,22 @@ IndoorTusa_PlayerHouse_MapScripts::
 	.set LOCALID_MOM, 1
 	.set LOCALID_CARRAIG, 2
 	.set LOCALID_CARRAIGBAG, 3
+	map_script MAP_SCRIPT_ON_TRANSITION, PlayerHouse_OnTransition
+
+	PlayerHouse_OnTransition::
+		setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
+		end
 
 	Script_TusaTown_PlayerHouse_CarraigsBag::
 		lock
 		faceplayer
+		setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 		special ChooseStarter
 		waitstate
+		setflag FLAG_SYS_POKEMON_GET
+		setflag FLAG_SYS_B_DASH
+		setflag FLAG_GRAINNE_HIDE
+		setflag FLAG_GRAINNE_ETHEL_CUTSCENE
 		delay 10
 		playfanfare MUS_OBTAIN_ITEM
 		waitfanfare
@@ -25,6 +35,7 @@ IndoorTusa_PlayerHouse_MapScripts::
 		applymovement LOCALID_CARRAIG, Movement_TurnLeft
 		msgbox Text_Carraig7, MSGBOX_DEFAULT
 		delay 15
+		closemessage
 		applymovement LOCALID_CARRAIG Movement_CarraigLeave
 		waitmovement 0
 		removeobject LOCALID_CARRAIG
@@ -141,24 +152,25 @@ IndoorTusa_PlayerHouse_MapScripts::
 		.string "MOM: Do you not remember Carraig?$"
 
 	Text_Carraig2:
-		.string "CARRAIG: Sure, in fairness I was gone \n"
-		.string "awhile. $"
+		.string "CARRAIG: Sure,I was gone awhile. $"
 
 	Text_Mom2:
-		.string "MOM: He's Ethel's one. He was \n"
-		.string "out in Unova the last few years.$"
+		.string "MOM: He's Ethel's son. He  \n"
+		.string "emigrated out to Unova when you...\l"
+		.string "..you must have been only ten, I \l"
+		.string "suppose!.$"
 
 	Text_Carraig3:
 		.string "CARRAIG: Yeah but I'm back now \n"
-		.string "for the foreseeable.  \l"
+		.string "for the next while.  \l"
 		.string "Mam couldn't find a replacement for \l"
 		.string "her Gym in Liabara City, so I'll \l"
-		.string "be taking it over. $"
+		.string "be taking over for her. $"
 
 	Text_Mom3:
 		.string "MOM: It will be great to see it \n"
-		.string "in use again. \l"
-		.string "Dead handy too, I know {PLAYER} has \l"
+		.string "in use again. \p"
+		.string "Handy too, I know {PLAYER} has \n"
 		.string "been wanting to try the league challenge. \l"
 		.string "Liabara isn't too far away for \l"
 		.string "their first stop. $"
@@ -171,24 +183,25 @@ IndoorTusa_PlayerHouse_MapScripts::
 	Text_Carraig5:
 		.string "CARRAIG: As the local Gym Leader \n"
 		.string "its my responsibility to \l"
-		.string "hand out Pokemon to young \l"
+		.string "hand out Pokemon to beginning \l"
 		.string "trainers \l"
-		.string "I caught these little ones while travelling. \l"
-		.string "How about you take first pick \l"
+		.string "I caught these little ones while\l"
+		.string "travelling. \p"
+		.string "How about you take first pick \n"
 		.string "{PLAYER}? $"
 
 	Text_Mom4:
-		.string "MOM: Ahh how wonderful. $"
+		.string "MOM: Oh, isn't that great.$"
 
 	Text_Carraig6:
 		.string "CARRAIG: Okay {PLAYER}. That starter \n"
 		.string "isn't free. I need you to \l"
 		.string "do some advertising for my gym. \l"
-		.string "If you see any trainers tell 'em the' \l"
+		.string "If you see any trainers tell 'em the \l"
 		.string "Liabara City Gym is officially reopened.$"
 
 	Text_Carraig7:
-		.string "CARRAIG: Okay, I'll be heading out now. \n"
+		.string "CARRAIG: I'll be heading out now. \n"
 		.string "Looking forward to see what you \l"
 		.string "and {STR_VAR_1} can do.$"
 

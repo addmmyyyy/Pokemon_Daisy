@@ -8,4 +8,4 @@ TusaTown_House_3_MapScripts::
 	TusaHouse_Text_Woman:
 		.string "This clean air and the lovely \n"
 		.string "views. Can't get either in the city. \p"
-		.string "Sure would love a bus route though..."
+		.string "Sure would love a bus route though... $"

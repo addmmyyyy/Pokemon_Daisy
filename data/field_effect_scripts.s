@@ -113,6 +113,7 @@ gFieldEffectScript_UseSurf::
 	field_eff_callnative FldEff_UseSurf
 	field_eff_end
 
+
 gFieldEffectScript_GroundImpactDust::
 	field_eff_loadfadedpal_callnative gSpritePalette_GeneralFieldEffect0, FldEff_Dust
 	field_eff_end

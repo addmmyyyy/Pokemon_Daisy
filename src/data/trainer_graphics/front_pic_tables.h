@@ -93,6 +93,7 @@ const struct MonCoords gTrainerFrontPicCoords[] =
     [TRAINER_PIC_LEAF] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_RS_BRENDAN] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_RS_MAY] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_LEADER_CARRAIG] = {.size = 8, .y_offset = 1},
 };
 
 #define TRAINER_SPRITE(trainerPic, sprite, size) [TRAINER_PIC_##trainerPic] = {sprite, size, TRAINER_PIC_##trainerPic}
@@ -140,6 +141,7 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
     TRAINER_SPRITE(ELITE_FOUR_GLACIA, gTrainerFrontPic_EliteFourGlacia, 0x800),
     TRAINER_SPRITE(ELITE_FOUR_DRAKE, gTrainerFrontPic_EliteFourDrake, 0x800),
     TRAINER_SPRITE(LEADER_ROXANNE, gTrainerFrontPic_LeaderRoxanne, 0x800),
+    TRAINER_SPRITE(LEADER_CARRAIG, gTrainerFrontPic_LeaderCarraig, 0x800),
     TRAINER_SPRITE(LEADER_BRAWLY, gTrainerFrontPic_LeaderBrawly, 0x800),
     TRAINER_SPRITE(LEADER_WATTSON, gTrainerFrontPic_LeaderWattson, 0x800),
     TRAINER_SPRITE(LEADER_FLANNERY, gTrainerFrontPic_LeaderFlannery, 0x800),
@@ -239,6 +241,7 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(ELITE_FOUR_GLACIA, gTrainerPalette_EliteFourGlacia),
     TRAINER_PAL(ELITE_FOUR_DRAKE, gTrainerPalette_EliteFourDrake),
     TRAINER_PAL(LEADER_ROXANNE, gTrainerPalette_LeaderRoxanne),
+    TRAINER_PAL(LEADER_CARRAIG, gTrainerPalette_LeaderCarraig),
     TRAINER_PAL(LEADER_BRAWLY, gTrainerPalette_LeaderBrawly),
     TRAINER_PAL(LEADER_WATTSON, gTrainerPalette_LeaderWattson),
     TRAINER_PAL(LEADER_FLANNERY, gTrainerPalette_LeaderFlannery),

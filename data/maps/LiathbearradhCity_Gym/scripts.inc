@@ -41,7 +41,7 @@ LiabaraGym_Text_OliverPostBattle:
  .string "Ethel to her new lab. $"
 
 LiabaraGym_EventScript_PADRAIG::
- trainerbattle_single TRAINER_D_PADRAIG, LiabaraGym_Text_PadraigIntro, LiabaraGym_Text_PadraigDefeat
+ trainerbattle_single TRAINER_D_MELCHIOR, LiabaraGym_Text_PadraigIntro, LiabaraGym_Text_PadraigDefeat
  msgbox LiabaraGym_Text_PadraigPostBattle, MSGBOX_AUTOCLOSE
  end
 
@@ -64,25 +64,67 @@ LiabaraGym_EventScript_Aodhan::
 LiabaraGym_Text_AodhanIntro:
  .string "Heya! I'm actually not from \n"
  .string "around here, was just paying Carraig \l"
- .string "a visit. But its always good to have \l"
- .string "friends owe you $"
+ .string "a visit. But its always good to  \l"
+ .string "have a friend in debt. $"
 
 LiabaraGym_Text_AodhanDefeat:
-	.string "Not too bad kid."
+	.string "Not too bad kid.$"
 
 LiabaraGym_Text_AodhanPostBattle:
 	.string "Y'know your style of battling \n"
 	.string "reminds me of my sister's. Brutal. $"
 
+LiabaraGym_EventScript_CarraigDefeated::
+	message LiabaraGym_Text_ReceivedGlobeBadge
+	waitmessage
+	call Common_EventScript_PlayGymBadgeFanfare
+	setflag FLAG_BADGE01_GET
+	goto LiabaraGym_EventScript_GiveRockTomb
+	end
 
- LiabaraGym_EventScript_Carraig::
-  MSGBOX LiabaraGym_Text_CarraigIntro MSGBOX_DEFAULT
+LiabaraGym_EventScript_GiveRockTomb::
+		msgbox LiabaraGym_Text_BadgeAndTakeThis, MSGBOX_DEFAULT
+		giveitem ITEM_TM39
+		goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+		setflag FLAG_RECEIVED_TM39
+		msgbox LiabaraGym_Text_ExplainRockTomb, MSGBOX_DEFAULT
+		closemessage
+		release
+		end
+
+LiabaraGym_Text_BadgeAndTakeThis:
+	.string "CARRAIG: That badge is proof of your \n"
+	.string "skill and your first step to\l"
+	.string "taking on the league. \p"
+	.string "I'd also like to give you this. $"
+
+LiabaraGym_Text_ExplainRockTomb:
+			.string "CARRAIG: That TECHNICAL MACHINE \n"
+			.string "is my favourite move, Rock Tomb.\p"
+			.string "It damages the opponent while\n"
+			.string "also lowering their Speed.\p"
+			.string "Really my slower Pokémon keep \n"
+			.string "up during a battle. $"
+
+
+LiabaraGym_Text_ReceivedGlobeBadge:
+.string "{PLAYER} received the GLOBE BADGE\n"
+.string "from Carraig.$"
+
+LiabaraGym_EventScript_Carraig::
+ 	goto_if_unset FLAG_BADGE01_GET, LiabaraGym_EventScript_CarraigPreFight
+ 	msgbox LiabaraGym_Text_CarraigPostBattle, MSGBOX_AUTOCLOSE
+ 	end
+
+LiabaraGym_EventScript_CarraigPreFight::
+	MSGBOX LiabaraGym_Text_CarraigIntro MSGBOX_DEFAULT
 	MSGBOX LiabaraGym_Text_CarraigIntro_2 MSGBOX_DEFAULT
 	MSGBOX LiabaraGym_Text_CarraigIntro_3 MSGBOX_DEFAULT
 	playbgm MUS_RG_VS_GYM_LEADER, FALSE
- 	trainerbattle_single TRAINER_D_CARRAIG_1, LiabaraGym_Text_CarraigIntro_4, LiabaraGym_Text_CarraigDefeat
- 	msgbox LiabaraGym_Text_CarraigPostBattle, MSGBOX_AUTOCLOSE
- 	end
+	trainerbattle_single TRAINER_D_CARRAIG_1, LiabaraGym_Text_CarraigIntro_4, LiabaraGym_Text_CarraigDefeat, LiabaraGym_EventScript_CarraigDefeated
+	goto_if_unset FLAG_RECEIVED_TM39, LiabaraGym_EventScript_GiveRockTomb
+	end
+
 
 LiabaraGym_Text_CarraigIntro:
   .string "{PLAYER}, great to see you made it!\n"
@@ -105,7 +147,12 @@ LiabaraGym_Text_CarraigIntro_4:
 
 
 LiabaraGym_Text_CarraigDefeat:
-	.string "Ah geez $"
+.string "Wow {PLAYER}, congratulations! \n"
+.string "It's my honour as Liabara City's \l"
+.string "Gym Leader to give you the Globe \l"
+.string "Badge. $"
 
 LiabaraGym_Text_CarraigPostBattle:
-	.string "filler $"
+	.string "CARRAIG: Your next stop now \n"
+	.string "is Cleartide City. Just go down \l "
+	.string "the mountain from Tusa and head east $"
