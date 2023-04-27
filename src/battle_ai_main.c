@@ -4997,13 +4997,13 @@ static s16 AI_PreferBatonPass(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
 
 static s16 AI_Fionn(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
 {
-  if (IS_MOVE_PHYSICAL(move) || IS_MOVE_SPECIAL(move)) {
+  /*if (IS_MOVE_PHYSICAL(move) || IS_MOVE_SPECIAL(move)) {
     score = CalculateDamageForScore(move, battlerAtk, battlerDef);
   }
 
   if (IS_MOVE_STATUS(move)) {
     return srand(time(NULL));
-  }
+  }*/
   return score;
 }
 
